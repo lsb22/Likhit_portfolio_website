@@ -3,7 +3,7 @@ import { HStack, Text } from "@chakra-ui/react";
 const Navbar = () => {
   return (
     <HStack justifyContent="space-between">
-      <Text ml={8} fontWeight="bold" fontSize={22}>
+      <Text ml={8} fontWeight="bold" fontSize={30}>
         LIKHIT S B
       </Text>
       <HStack>
