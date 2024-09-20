@@ -1,6 +1,7 @@
 import { Grid, GridItem } from "@chakra-ui/react";
 import Navbar from "./Components/Navbar";
 import "./App.css";
+import HomePage from "./Components/HomePage";
 
 function App() {
   return (
@@ -9,8 +10,8 @@ function App() {
         <GridItem area="nav" padding={5}>
           <Navbar />
         </GridItem>
-        <GridItem area="main" bgColor="skyblue">
-          Main
+        <GridItem area="main">
+          <HomePage />
         </GridItem>
       </Grid>
     </>
