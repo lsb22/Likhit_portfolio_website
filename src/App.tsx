@@ -1,12 +1,13 @@
-import { Grid, GridItem, Text } from "@chakra-ui/react";
+import { Grid, GridItem } from "@chakra-ui/react";
+import Navbar from "./Components/Navbar";
 import "./App.css";
 
 function App() {
   return (
     <>
       <Grid templateAreas={{ base: `"nav" "main"` }}>
-        <GridItem area="nav" bgColor="green.500">
-          Navbar
+        <GridItem area="nav" padding={5}>
+          <Navbar />
         </GridItem>
         <GridItem area="main" bgColor="skyblue">
           Main
@@ -15,5 +16,4 @@ function App() {
     </>
   );
 }
-
 export default App;
