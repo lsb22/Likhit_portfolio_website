@@ -10,8 +10,6 @@ function App() {
         templateAreas={{ base: `"nav" "main"` }}
         bgGradient="linear(to-b, #00CFFF, #00BFFF, #00AFFF)"
         color="whitesmoke"
-        // height="100vh"
-        // width="100%"
       >
         <GridItem area="nav" padding={5}>
           <Navbar />
