@@ -2,7 +2,14 @@ import { HStack, Text } from "@chakra-ui/react";
 
 const Navbar = () => {
   return (
-    <HStack justifyContent="space-between">
+    <HStack
+      p={5}
+      justifyContent="space-between"
+      backdropFilter="blur(10px)"
+      bgGradient="linear(to-l,#56B3FA, #00BFFF, #C9E4CA)"
+
+      // bgGradient="linear(to-l,#02AEED,#85EBE7,#E3E6DF)"
+    >
       <Text ml={8} fontWeight="bold" fontSize={30}>
         LIKHIT S B
       </Text>
