@@ -1,21 +1,105 @@
-import { Box } from "@chakra-ui/react";
-import { useRef } from "react";
+import { Box, Text } from "@chakra-ui/react";
+import { useGSAP } from "@gsap/react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
-  const aboutRef = useRef(null);
+  useGSAP(() => {
+    const timeLine = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".about",
+        start: "top top",
+        end: "+=1500px",
+        scrub: 1,
+        pin: true,
+      },
+    });
+
+    timeLine
+      .fromTo(
+        ".card1",
+        { opacity: 0, yPercent: 100, rotationX: 45, z: -100 },
+        {
+          opacity: 1,
+          yPercent: 0,
+          rotationX: 0,
+          z: 0,
+          duration: 2,
+          ease: "power2.out",
+        }
+      )
+      .fromTo(
+        ".card2",
+        { opacity: 0, yPercent: 180, rotationX: 45, z: -100 },
+        {
+          opacity: 1,
+          yPercent: 0,
+          rotationX: 0,
+          z: 0,
+          duration: 2,
+          ease: "power2.out",
+        },
+        "-=0.6"
+      )
+      .fromTo(
+        ".card3",
+        { opacity: 0, yPercent: 260, rotationX: 45, z: -100 },
+        {
+          opacity: 1,
+          yPercent: 0,
+          rotationX: 0,
+          z: 0,
+          duration: 2,
+          ease: "power2.out",
+        },
+        "-=0.6"
+      )
+      .fromTo(
+        ".card4",
+        { opacity: 0, yPercent: 340, rotationX: 45, z: -100 },
+        {
+          opacity: 1,
+          yPercent: 0,
+          rotationX: 0,
+          z: 0,
+          duration: 2,
+          ease: "power2.out",
+        },
+        "-=0.6"
+      );
+  }, []);
+
   return (
     <Box
+      /*bgColor="white"*/
+      // backgroundImage="linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);"
+      className="about"
       bgColor="white"
-      color="#00BFFF"
-      height="600px"
-      padding="200px"
-      fontSize="xx-large"
-      ref={aboutRef}
+      // pt={10}
     >
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente veniam
-      asperiores molestiae reprehenderit? Accusamus, dolorum. Dolorem optio amet
-      quae unde repellat. Tempora, voluptatibus perspiciatis omnis assumenda a
-      hic maxime pariatur.
+      <Box className="container">
+        <Text color="#1a202c">Know About me</Text>
+        {/* <Box
+          className="whiteCard card1"
+          style={{ backgroundColor: "seagreen" }}
+        >
+          
+        </Box> */}
+        <Box className="blackCard card1">
+          <Text>I'm Likhit Sb</Text>
+        </Box>
+        <Box className="whiteCard card2">
+          <Text>3rd year Engineering student at JSSATEB</Text>
+        </Box>
+        <Box className="blackCard card3">
+          <Text>I love coding and solving problems</Text>
+        </Box>
+        <Box className="whiteCard card4">
+          <Text>I'm a Leetcoder!</Text>
+        </Box>
+      </Box>
     </Box>
   );
 };

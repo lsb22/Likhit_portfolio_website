@@ -5,8 +5,9 @@ const Navbar = () => {
     <HStack
       p={5}
       justifyContent="space-between"
-      backdropFilter="blur(10px)"
-      bgGradient="linear(to-l,#56B3FA, #00BFFF, #C9E4CA)"
+      bgColor="#1a202c"
+      // backdropFilter="blur(10px)"
+      // bgGradient="linear(to-l,#56B3FA, #00BFFF, #C9E4CA)"
 
       // bgGradient="linear(to-l,#02AEED,#85EBE7,#E3E6DF)"
     >

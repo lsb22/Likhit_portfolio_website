@@ -2,7 +2,8 @@ import { Box, GridItem, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { useRef } from "react";
-import profileImg from "../assets/images/lsb-img-2.png";
+// import profileImg from "../assets/images/lsb-img-2.png";
+import profileImg from "../assets/images/lsb-6.png";
 
 const HomePage = () => {
   const profileRef = useRef(null);
@@ -25,6 +26,7 @@ const HomePage = () => {
           {
             y: 120,
             ease: "power3.in",
+            border: "1px solid white",
             borderRadius: "20%",
             duration: 0.7,
             opacity: 1,
@@ -34,6 +36,7 @@ const HomePage = () => {
           x: 40,
           ease: "power4.inOut",
           duration: 1,
+          borderWidth: "2px",
           borderRadius: "100%",
           scale: 1.2,
         })
@@ -93,10 +96,12 @@ const HomePage = () => {
 
   return (
     <SimpleGrid
-      height="40%"
-      bgGradient="linear(to-l,#56B3FA, #00BFFF, #C9E4CA)"
+      // height="40%"
+      // bgGradient="linear(to-l,#56B3FA, #00BFFF, #C9E4CA)"
       // bgGradient="linear(to-l,#02AEED,#85EBE7,#E3E6DF)"
+      bgColor="#1a202c"
       columns={{ base: 1, lg: 2 }}
+      className="homePage"
     >
       <GridItem display="flex" justifyContent="center">
         <Image
@@ -134,8 +139,9 @@ const HomePage = () => {
             pl={40}
             fontSize="50px"
             className="info-text"
-            bgGradient="linear(to-r,#F5DEB3,#4CAF50)"
+            // bgGradient="linear(to-r,#F5DEB3,#4CAF50)"
             // bgGradient="linear(to-l, #34A8FF, #00CFFF, #FFD700)"
+            // color="#1a202c"
           >
             Web Developer
           </Text>
