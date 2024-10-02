@@ -5,13 +5,14 @@ const Navbar = () => {
     <HStack
       p={5}
       justifyContent="space-between"
-      bgColor="#1a202c"
+      // bgColor="#1a202c"
+      bgColor="black"
       // backdropFilter="blur(10px)"
       // bgGradient="linear(to-l,#56B3FA, #00BFFF, #C9E4CA)"
 
       // bgGradient="linear(to-l,#02AEED,#85EBE7,#E3E6DF)"
     >
-      <Text ml={8} fontWeight="bold" fontSize={30}>
+      <Text ml={8} fontWeight="bold" fontSize={30} className="header">
         LIKHIT S B
       </Text>
       <HStack>

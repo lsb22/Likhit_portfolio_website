@@ -4,6 +4,12 @@ body {
   overflow-x: hidden;
 }
 
+.header {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .homePage,
 .about {
   height: 100vh;
@@ -26,20 +32,25 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
-
+  align-items: center; */
   border-radius: 10px;
   transform-style: preserve-3d;
 }
 
+/* .whiteCard,
+.blackCard {
+  height: 100vh;
+  width: 100%;
+} */
+
 .whiteCard {
   background-color: white;
-  color: #1a202c;
+  color: black;
 }
 
 .blackCard {
-  background-color: #1a202c;
+  background-color: black;
   color: white;
 }

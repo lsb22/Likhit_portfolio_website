@@ -3,7 +3,7 @@ import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { useRef } from "react";
 // import profileImg from "../assets/images/lsb-img-2.png";
-import profileImg from "../assets/images/lsb-6.png";
+import profileImg from "../assets/images/lsb-img-5.png";
 
 const HomePage = () => {
   const profileRef = useRef(null);
@@ -99,7 +99,8 @@ const HomePage = () => {
       // height="40%"
       // bgGradient="linear(to-l,#56B3FA, #00BFFF, #C9E4CA)"
       // bgGradient="linear(to-l,#02AEED,#85EBE7,#E3E6DF)"
-      bgColor="#1a202c"
+      // bgColor="#1a202c"
+      bgColor="black"
       columns={{ base: 1, lg: 2 }}
       className="homePage"
     >
@@ -125,7 +126,12 @@ const HomePage = () => {
         >
           <span className="info-text">Hi there, this is</span>
           <br />{" "}
-          <Text as="i" fontSize="90px" className="info-text">
+          <Text
+            as="i"
+            fontSize="90px"
+            className="info-text"
+            // fontFamily="Kaushan Script"`
+          >
             LIKHIT S B
           </Text>
           <br />
