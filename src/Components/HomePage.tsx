@@ -38,7 +38,7 @@ const HomePage = () => {
           duration: 1,
           borderWidth: "2px",
           borderRadius: "100%",
-          scale: 1.2,
+          scale: 1.3,
         })
         .fromTo(
           infoRef.current,
@@ -113,6 +113,7 @@ const HomePage = () => {
           height="300px"
           ref={profileRef}
           objectFit="cover"
+          pointerEvents="none"
         />
       </GridItem>
       <GridItem>
