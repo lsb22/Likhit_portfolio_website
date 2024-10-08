@@ -4,6 +4,7 @@ import About from "./Components/About";
 import HomePage from "./Components/HomePage";
 import Navbar from "./Components/Navbar";
 import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <GridItem area="main">
           <HomePage />
           <Projects />
+          <Contact />
           <About />
         </GridItem>
       </Grid>

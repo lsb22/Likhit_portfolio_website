@@ -11,34 +11,19 @@ import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   return (
-    <Box
-      key={10}
-      // border="1px solid blue"
-      position="relative"
-      className="projects"
-    >
+    <Box key={10} position="relative" className="projects">
       {" "}
       {/*added key attribute to avoid error*/}
-      <Flex
-        justifyContent="center"
-        alignItems="center"
-        // pt={30}
-      >
+      <Flex justifyContent="center" alignItems="center">
         <Text as="b" fontFamily="sans-serif" fontSize="100px">
           My projects.
         </Text>
       </Flex>
-      <SimpleGrid
-        // className="projects"
-        // columns={{ base: 1, md: 2, lg: 3 }}
-        columns={1}
-        spacing={5}
-        padding={{ lg: 10 }}
-      >
+      <SimpleGrid columns={1} spacing={5} padding={{ lg: 10 }}>
         <GridItem key={0}>
           <ProjectCard index={0}>
             <VStack>
-              <Text fontSize="50px" fontWeight="600" pt="130px">
+              <Text className="cardHeading">
                 <Link href="https://game-hub-swart-five.vercel.app/" isExternal>
                   Search your favourite games right away.
                 </Link>
@@ -53,7 +38,7 @@ const Projects = () => {
         <GridItem key={1}>
           <ProjectCard index={1}>
             <VStack>
-              <Text fontSize="50px" fontWeight="600" pt="130px">
+              <Text className="cardHeading">
                 Student data management made simple.
               </Text>
               <Text fontSize="25px" color="gray.300">
@@ -66,7 +51,7 @@ const Projects = () => {
         <GridItem key={2}>
           <ProjectCard index={2}>
             <VStack textAlign="left">
-              <Text fontSize="50px" fontWeight="600" pt="130px">
+              <Text className="cardHeading">
                 <Link href="https://github.com/lsb22/ToDoListApp" isExternal>
                   Too many tasks?, one todolist is the answer
                 </Link>

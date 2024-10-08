@@ -11,7 +11,8 @@ body {
 }
 
 .homePage,
-.about {
+.about,
+.contact {
   height: 100vh;
   width: 100%;
 }
@@ -38,18 +39,9 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   border-radius: 10px;
   transform-style: preserve-3d;
 }
-
-/* .whiteCard,
-.blackCard {
-  height: 100vh;
-  width: 100%;
-} */
 
 .whiteCard {
   background-color: white;
@@ -59,4 +51,10 @@ body {
 .blackCard {
   background-color: black;
   color: white;
+}
+
+.cardHeading {
+  font-size: 50px;
+  font-weight: 600;
+  padding-top: 130px;
 }
