@@ -2,7 +2,6 @@ import { Box, GridItem, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { useRef } from "react";
-// import profileImg from "../assets/images/lsb-img-2.png";
 import profileImg from "../assets/images/lsb-img-5.png";
 
 const HomePage = () => {

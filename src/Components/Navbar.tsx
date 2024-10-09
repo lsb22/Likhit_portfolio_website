@@ -17,7 +17,7 @@ const Navbar = () => {
       </Text>
       <HStack>
         <Text mr={5}>About</Text>
-        <Text mr={5}>Skills</Text>
+        <Text mr={5}>Projects</Text>
         <Text mr={5}>Contact</Text>
       </HStack>
     </HStack>
