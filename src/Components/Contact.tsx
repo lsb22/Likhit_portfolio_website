@@ -1,18 +1,16 @@
 import {
   Box,
   Card,
-  CardBody,
   Flex,
-  Grid,
   GridItem,
+  Image,
   Link,
   SimpleGrid,
   Text,
-  Image,
 } from "@chakra-ui/react";
-import email from "../assets/images/email-img-1.jpg";
-import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import email from "../assets/images/email-img-1.jpg";
 
 const Contact = () => {
   useGSAP(() => {
@@ -90,8 +88,6 @@ const Contact = () => {
                 href="www.linkedin.com/in/likhitsb156"
                 _hover={{ textDecoration: "none" }}
               >
-                {/* <Image src={linkedin} width="300px" height="300px" />
-                 */}
                 <Text fontSize="125px" fontWeight="600">
                   Linked{" "}
                   <Box display="inline" bgColor="blue.600" bgClip="text">

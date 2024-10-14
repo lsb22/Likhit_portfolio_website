@@ -1,8 +1,8 @@
-import { Box, Card, CardBody, Image } from "@chakra-ui/react";
 import { ReactNode } from "react";
-import gamehub from "../assets/images/gameHub.png";
-import studentapp from "../assets/images/studentManagement.png";
 import todo from "../assets/images/todoList.avif";
+import gamehub from "../assets/images/gameHub.png";
+import { Box, Card, CardBody, Image } from "@chakra-ui/react";
+import studentapp from "../assets/images/studentManagement.png";
 
 interface Props {
   index: number;

@@ -1,22 +1,14 @@
-import { Box, Text, Image, HStack, VStack, Flex } from "@chakra-ui/react";
-import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import I_Icon from "../assets/images/star-shape-2.png";
 import profileImg from "../assets/images/profile-config.png";
+import { Box, Text, Image, HStack, VStack, Flex } from "@chakra-ui/react";
 import leetcode from "../assets/images/Screenshot 2024-09-30 193303.png";
-
-// import collegeImg from "../assets/images/college-1.jpeg";
-// import myImg from "../assets/images/img-7.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
-  // const zoomIn = keyframes`
-  //   from { transform: scale(1); }
-  //   to { transform: scale(1.1); }
-  // `;
-
   useGSAP(() => {
     const timeLine = gsap.timeline({
       scrollTrigger: {
@@ -89,9 +81,7 @@ const About = () => {
         <Box className="blackCard card1">
           <Box>
             <HStack justifyContent="space-between">
-              {/* <HStack> */}
               <Text fontSize="10rem">I am</Text>
-              {/* </HStack> */}
               <Image src={I_Icon} boxSize="300px" />
             </HStack>
             <Text as="i" fontSize="15rem" fontWeight="bold" pl={10}>

@@ -1,8 +1,8 @@
-import { Box, GridItem, Image, SimpleGrid, Text } from "@chakra-ui/react";
-import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
 import profileImg from "../assets/images/lsb-img-5.png";
+import { Box, GridItem, Image, SimpleGrid, Text } from "@chakra-ui/react";
 
 const HomePage = () => {
   const profileRef = useRef(null);
@@ -95,10 +95,6 @@ const HomePage = () => {
 
   return (
     <SimpleGrid
-      // height="40%"
-      // bgGradient="linear(to-l,#56B3FA, #00BFFF, #C9E4CA)"
-      // bgGradient="linear(to-l,#02AEED,#85EBE7,#E3E6DF)"
-      // bgColor="#1a202c"
       bgColor="black"
       columns={{ base: 1, lg: 2 }}
       className="homePage"
@@ -126,12 +122,7 @@ const HomePage = () => {
         >
           <span className="info-text">Hi there, this is</span>
           <br />{" "}
-          <Text
-            as="i"
-            fontSize="90px"
-            className="info-text"
-            // fontFamily="Kaushan Script"`
-          >
+          <Text as="i" fontSize="90px" className="info-text">
             LIKHIT S B
           </Text>
           <br />
@@ -140,15 +131,7 @@ const HomePage = () => {
             FullStack
           </Text>{" "}
           <br />
-          <Text
-            as="em"
-            pl={40}
-            fontSize="50px"
-            className="info-text"
-            // bgGradient="linear(to-r,#F5DEB3,#4CAF50)"
-            // bgGradient="linear(to-l, #34A8FF, #00CFFF, #FFD700)"
-            // color="#1a202c"
-          >
+          <Text as="em" pl={40} fontSize="50px" className="info-text">
             Web Developer
           </Text>
         </Box>
