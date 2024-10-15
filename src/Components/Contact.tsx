@@ -18,7 +18,7 @@ const Contact = () => {
 
     card?.addEventListener("mouseenter", () => {
       gsap.to(".email-slider", {
-        x: 629,
+        x: 633,
         border: "2px solid black",
         color: "black",
         duration: 0.7,

@@ -5,16 +5,44 @@ import I_Icon from "../assets/images/star-shape-2.png";
 import profileImg from "../assets/images/profile-config.png";
 import { Box, Text, Image, HStack, VStack, Flex } from "@chakra-ui/react";
 import leetcode from "../assets/images/Screenshot 2024-09-30 193303.png";
+import LocomotiveScroll from "locomotive-scroll";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
   useGSAP(() => {
+    const ele: HTMLElement = document.querySelector(".scrollContainer")!;
+    const locoScroll = new LocomotiveScroll({
+      el: ele,
+      smooth: true,
+      lerp: 0.08,
+    });
+
+    locoScroll.on("scroll", ScrollTrigger.update);
+
+    ScrollTrigger.scrollerProxy(ele, {
+      scrollTop(value) {
+        return arguments.length // @ts-ignore
+          ? locoScroll.scrollTo(value, 0, 0) // @ts-ignore
+          : locoScroll.scroll.instance.scroll.y;
+      },
+      getBoundingClientRect() {
+        return {
+          top: 0,
+          left: 0,
+          width: window.innerWidth,
+          height: window.innerHeight,
+        };
+      },
+      pinType: ele.style.transform ? "transform" : "fixed",
+    });
+
     const timeLine = gsap.timeline({
       scrollTrigger: {
         trigger: ".about",
         start: "top top",
         end: "+=1500px",
+        scroller: ".scrollContainer",
         scrub: 1,
         pin: true,
       },
@@ -44,7 +72,7 @@ const About = () => {
           duration: 2,
           ease: "power2.out",
         },
-        "-=0.6"
+        "-=0.9"
       )
       .fromTo(
         ".card3",
@@ -57,7 +85,7 @@ const About = () => {
           duration: 2,
           ease: "power2.out",
         },
-        "-=0.6"
+        "-=0.9"
       )
       .fromTo(
         ".card4",
@@ -70,8 +98,18 @@ const About = () => {
           duration: 2,
           ease: "power2.out",
         },
-        "-=0.6"
+        "-=0.9"
       );
+
+    // @ts-ignore
+    ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+    ScrollTrigger.refresh();
+
+    return () => {
+      if (locoScroll) locoScroll.destroy();
+      // @ts-ignore
+      ScrollTrigger.removeEventListener("refresh", () => locoScroll.update());
+    };
   }, []);
 
   return (

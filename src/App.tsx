@@ -8,7 +8,7 @@ import { Box, Grid, GridItem } from "@chakra-ui/react";
 
 function App() {
   return (
-    <Box>
+    <Box className="scrollContainer">
       <Grid templateAreas={{ base: `"nav" "main"` }} color="whitesmoke">
         <GridItem area="nav">
           <Navbar />
