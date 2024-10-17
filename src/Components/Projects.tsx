@@ -11,11 +11,18 @@ import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   return (
-    <Box key={10} position="relative" className="projects">
+    <Box key={10} position="relative" className="projects" data-scroll-section>
       {" "}
       {/*added key attribute to avoid error*/}
-      <Flex justifyContent="center" alignItems="center">
-        <Text as="b" fontFamily="sans-serif" fontSize="100px">
+      <Flex justifyContent="center" alignItems="center" data-scroll>
+        <Text
+          as="b"
+          fontFamily="sans-serif"
+          fontSize="100px"
+          data-scroll
+          data-scroll-speed="3"
+          // data-scroll-direction="horizontal"
+        >
           My projects.
         </Text>
       </Flex>

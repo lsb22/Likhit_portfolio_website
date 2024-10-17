@@ -98,6 +98,7 @@ const HomePage = () => {
       bgColor="black"
       columns={{ base: 1, lg: 2 }}
       className="homePage"
+      data-scroll-section
     >
       <GridItem display="flex" justifyContent="center">
         <Image
@@ -131,7 +132,15 @@ const HomePage = () => {
             FullStack
           </Text>{" "}
           <br />
-          <Text as="em" pl={40} fontSize="50px" className="info-text">
+          <Text
+            as="em"
+            pl={40}
+            fontSize="50px"
+            className="info-text"
+            // data-scroll
+            // data-scroll-speed="-10"
+            // data-scroll-direction="horizontal"
+          >
             Web Developer
           </Text>
         </Box>

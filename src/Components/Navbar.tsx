@@ -2,7 +2,12 @@ import { HStack, Text } from "@chakra-ui/react";
 
 const Navbar = () => {
   return (
-    <HStack p={5} justifyContent="space-between" bgColor="black">
+    <HStack
+      p={5}
+      justifyContent="space-between"
+      bgColor="black"
+      data-scroll-section
+    >
       <Text ml={8} fontWeight="bold" fontSize={30} className="header">
         LIKHIT S B
       </Text>

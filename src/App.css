@@ -24,7 +24,7 @@ body {
   width: 100%;
   background-color: black;
 }
-
+/* 
 .container {
   display: flex;
   justify-content: center;
@@ -53,10 +53,45 @@ body {
 .blackCard {
   background-color: black;
   color: white;
-}
+} */
 
 .cardHeading {
   font-size: 50px;
   font-weight: 600;
   padding-top: 130px;
+}
+
+.animate-hr {
+  margin: 0;
+  width: 0;
+  height: 2px;
+  transition: width 1s ease-out;
+  background-color: white;
+}
+
+.animate-hr.is-inview {
+  width: 100%;
+}
+
+.about-name {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 8rem;
+  color: white;
+  position: relative;
+  .t1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.skewsec {
+  transform: skew(15deg) rotate(6deg);
+  padding: 13px 80px;
+  &:last-child {
+    transform: skew(-15deg) rotate(-6deg);
+    margin-top: 43vh;
+  }
 }
