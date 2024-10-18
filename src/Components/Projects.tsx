@@ -16,6 +16,7 @@ const Projects = () => {
       {/*added key attribute to avoid error*/}
       <Flex justifyContent="center" alignItems="center" data-scroll>
         <Text
+          className="my-projects"
           as="b"
           fontFamily="sans-serif"
           fontSize="100px"
