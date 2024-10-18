@@ -85,7 +85,7 @@ const Contact = () => {
           >
             <Flex justifyContent="center">
               <Link
-                href="www.linkedin.com/in/likhitsb156"
+                href="https://www.linkedin.com/in/likhitsb156"
                 _hover={{ textDecoration: "none" }}
               >
                 <Text fontSize="125px" fontWeight="600">

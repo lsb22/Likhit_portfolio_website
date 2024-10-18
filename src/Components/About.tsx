@@ -2,13 +2,7 @@ import { Box, HStack, Text } from "@chakra-ui/react";
 
 const About = () => {
   return (
-    <Box
-      data-scroll-section
-      bgColor="black"
-      width="100%"
-      minHeight="100vh"
-      border="1px solid blue"
-    >
+    <Box data-scroll-section bgColor="black" width="100%" minHeight="100vh">
       <Text
         color="white"
         fontSize="210px"
@@ -86,7 +80,7 @@ const About = () => {
             data-scroll-direction="horizontal"
             data-scroll-target="#name"
           >
-            3rd Year Engineering Student At JSSATEB
+            I Love coding and I am a cricket lover.
           </Box>
         </Box>
       </Box>

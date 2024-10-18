@@ -7,6 +7,7 @@ import Projects from "./Components/Projects";
 import { Box, Grid, GridItem } from "@chakra-ui/react";
 import useLocomotiveScroll from "./hooks/useLocomotiveScroll";
 import { useEffect } from "react";
+import Conclude from "./Components/Conclude";
 
 function App() {
   const { scrollRef, locomotiveScroll } = useLocomotiveScroll();
@@ -28,6 +29,7 @@ function App() {
           <Projects />
           <Contact />
           <About />
+          <Conclude />
         </GridItem>
       </Grid>
     </Box>

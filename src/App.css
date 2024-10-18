@@ -95,3 +95,9 @@ body {
     margin-top: 43vh;
   }
 }
+
+.end-section {
+  width: 100%;
+  min-height: 50vh;
+  font-size: 2rem;
+}
