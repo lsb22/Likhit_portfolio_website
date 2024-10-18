@@ -26,6 +26,7 @@ const Projects = () => {
           My projects.
         </Text>
       </Flex>
+      <hr className="animate-hr" data-scroll data-scroll-offset="18" />
       <SimpleGrid columns={1} spacing={5} padding={{ lg: 10 }}>
         <GridItem key={0}>
           <ProjectCard index={0}>

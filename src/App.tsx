@@ -8,6 +8,7 @@ import { Box, Grid, GridItem } from "@chakra-ui/react";
 import useLocomotiveScroll from "./hooks/useLocomotiveScroll";
 import { useEffect } from "react";
 import Conclude from "./Components/Conclude";
+import CustomCursor from "./Components/CustomCursor";
 
 function App() {
   const { scrollRef, locomotiveScroll } = useLocomotiveScroll();
@@ -21,6 +22,7 @@ function App() {
   return (
     <Box className="scrollContainer" data-scroll-container ref={scrollRef}>
       <Grid templateAreas={{ base: `"nav" "main"` }} color="whitesmoke">
+        <CustomCursor />
         <GridItem area="nav">
           <Navbar />
         </GridItem>

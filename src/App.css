@@ -4,12 +4,36 @@ body {
   padding: 0;
   overflow-x: hidden;
   overflow-y: scroll;
+  cursor: none;
 }
 
 .header {
   font-family: "Kaushan Script";
   font-weight: 400;
   font-style: normal;
+}
+
+.cursor-dot {
+  width: 5px;
+  height: 5px;
+  background-color: white;
+}
+
+.cursor-outline {
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+}
+
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .homePage,
