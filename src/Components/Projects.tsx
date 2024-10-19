@@ -19,7 +19,6 @@ const Projects = () => {
           className="my-projects"
           as="b"
           fontFamily="sans-serif"
-          fontSize="100px"
           data-scroll
           data-scroll-speed="3"
           // data-scroll-direction="horizontal"
@@ -28,7 +27,7 @@ const Projects = () => {
         </Text>
       </Flex>
       <hr className="animate-hr" data-scroll data-scroll-offset="18" />
-      <SimpleGrid columns={1} spacing={5} padding={{ lg: 10 }}>
+      <SimpleGrid columns={1} spacing={5} padding={10}>
         <GridItem key={0}>
           <ProjectCard index={0}>
             <VStack>
@@ -37,7 +36,7 @@ const Projects = () => {
                   Search your favourite games right away.
                 </Link>
               </Text>
-              <Text fontSize="25px" color="gray.300">
+              <Text color="gray.300" className="card-desc">
                 A simple and responsive platform to find games according to
                 genre and platform. I bet you'll never get bored.
               </Text>
@@ -50,7 +49,7 @@ const Projects = () => {
               <Text className="cardHeading">
                 Student data management made simple.
               </Text>
-              <Text fontSize="25px" color="gray.300">
+              <Text color="gray.300" className="card-desc">
                 Create classrooms and group students with several dynamic
                 functionalities along with seperate views for each classrooms.
               </Text>
@@ -65,7 +64,7 @@ const Projects = () => {
                   Too many tasks?, one todolist is the answer
                 </Link>
               </Text>
-              <Text fontSize="25px" color="gray.300">
+              <Text color="gray.300" className="card-desc">
                 Modern and user friendly ToDo list for all your day to day task
                 management where you can categorize tasks based on priority and
                 their type.

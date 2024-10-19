@@ -7,73 +7,62 @@ import {
   Link,
   SimpleGrid,
   Text,
+  Tooltip,
+  useToast,
 } from "@chakra-ui/react";
-import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
 import email from "../assets/images/email-img-1.jpg";
 
 const Contact = () => {
-  useGSAP(() => {
-    const card = document.querySelector(".emailCard");
+  const toast = useToast();
 
-    card?.addEventListener("mouseenter", () => {
-      gsap.to(".email-slider", {
-        x: 633,
-        border: "2px solid black",
-        color: "black",
-        duration: 0.7,
+  const handleClick = () => {
+    navigator.clipboard
+      .writeText("likith15600@gmail.com")
+      .then(() =>
+        toast({
+          title: "Copied to clipboard!",
+          description: "You have copied likith15600@gmail.com",
+          status: "success",
+          duration: 4000,
+          isClosable: true,
+        })
+      )
+      .catch(() => {
+        toast({
+          title: "Failed to copy",
+          description: "An error occured while copying",
+          status: "error",
+          duration: 4000,
+          isClosable: true,
+        });
       });
-    });
-
-    card?.addEventListener("mouseleave", () => {
-      gsap.to(".email-slider", {
-        x: 0,
-        y: 0,
-        duration: 0.7,
-      });
-    });
-  }, []);
+  };
 
   return (
     <Box className="contact" backgroundColor="black" data-scroll-section>
       <Flex as="b" fontSize="70px" fontStyle="600" justifyContent="center">
         Contact me
       </Flex>
-      <SimpleGrid columns={2} spacing={10} p={30}>
+      <SimpleGrid
+        className="contact-grid"
+        columns={{ md: 1, lg: 2 }}
+        spacing={10}
+      >
         <GridItem>
-          <Card
-            className="emailCard"
-            backgroundColor="black"
-            border="2px solid white"
-            borderRadius="10px"
-            position="relative"
-          >
-            <Flex justifyContent="center">
-              <Image src={email} width="300px" height="300px" />
-            </Flex>
-            <Box
-              className="email-slider"
-              position="absolute"
-              // opacity="0"
+          <Tooltip label="click to copy email" hasArrow>
+            <Card
+              className="emailCard "
+              backgroundColor="black"
+              border="2px solid white"
               borderRadius="10px"
-              height="300px"
-              width="580px"
-              backgroundColor="white"
-              left="-630"
-              display="flex"
-              justifyContent="center"
-              alignItems="center"
+              position="relative"
+              onClick={handleClick}
             >
-              <Text
-                fontSize="50px"
-                fontWeight="600"
-                bgGradient="linear(to-r,black 0%,gray 100%)"
-                bgClip="text"
-              >
-                likith15600@gmail.com
-              </Text>
-            </Box>
-          </Card>
+              <Flex justifyContent="center">
+                <Image className="contact-1" src={email} />
+              </Flex>
+            </Card>
+          </Tooltip>
         </GridItem>
         <GridItem>
           <Card
@@ -88,7 +77,7 @@ const Contact = () => {
                 href="https://www.linkedin.com/in/likhitsb156"
                 _hover={{ textDecoration: "none" }}
               >
-                <Text fontSize="125px" fontWeight="600">
+                <Text className="contact-2" fontWeight="600">
                   Linked{" "}
                   <Box display="inline" bgColor="blue.600" bgClip="text">
                     in

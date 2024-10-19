@@ -22,22 +22,10 @@ const ProjectCard = ({ index, children }: Props) => {
       borderRadius="10px"
       overflow="hidden"
       direction={index % 2 == 0 ? "row" : "row-reverse"}
-      // textAlign="left"
       mb={20}
     >
-      {/* <CardHeader>
-        <Text as="b" fontSize="xl">
-          {title}
-        </Text>
-      </CardHeader> */}
       <Box>
-        <Image
-          src={img}
-          width="600px"
-          height="600px"
-          objectFit="cover"
-          mt={-1}
-        />
+        <Image className="card-img" src={img} objectFit="cover" mt={-1} />
       </Box>
       <CardBody>{children}</CardBody>
     </Card>

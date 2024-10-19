@@ -16,6 +16,13 @@ const useLocomotiveScroll = () => {
         el: scrollRef.current,
         smooth: true,
         lerp: 0.08,
+        smartphone: {
+          smooth: true,
+        },
+        tablet: {
+          smooth: true,
+          breakpoint: 1024,
+        },
       });
 
       setLocomotiveScroll(locoScroll);
@@ -41,6 +48,10 @@ const useLocomotiveScroll = () => {
       // // @ts-ignore
       // ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
       // ScrollTrigger.refresh();
+
+      window.addEventListener("resize", () => {
+        locoScroll.update();
+      });
 
       return () => {
         locoScroll.destroy();

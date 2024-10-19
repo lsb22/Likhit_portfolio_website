@@ -24,7 +24,7 @@ body {
   height: 30px;
   border: 2px solid white;
   box-shadow: 0 0 20px #2696e8, 0 0 60px #2696e8, 0 0 100px #2696e8;
-  animation: colors 5s infinite;
+  animation: colors 5s infinite alternate;
 }
 
 @keyframes colors {
@@ -50,7 +50,7 @@ body {
 .homePage,
 .about,
 .contact {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 
@@ -135,4 +135,188 @@ body {
   width: 100%;
   min-height: 50vh;
   font-size: 2rem;
+}
+
+.card-desc {
+  font-size: 25px;
+}
+
+.my-projects {
+  font-size: 100px;
+}
+
+.card-img {
+  width: 600px;
+  height: 600px;
+}
+
+.contact-1 {
+  height: 300px;
+  width: 300px;
+}
+
+.contact-2 {
+  font-size: 125px;
+}
+
+.contact-grid {
+  padding: 30px;
+}
+
+.about-text {
+  font-size: 210px;
+  font-weight: 500;
+}
+
+@media (max-width: 1207.55px) and (min-width: 1050px) {
+  .card-img {
+    width: 500px;
+    height: 500px;
+  }
+
+  .cardHeading {
+    padding-top: 80px;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1049.77px) and (min-width: 900px) {
+  .card-img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .cardHeading {
+    padding-top: 60px;
+    font-size: 34px;
+  }
+
+  .card-desc {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 899.77px) and (min-width: 756px) {
+  .card-img {
+    width: 340px;
+    height: 340px;
+  }
+
+  .cardHeading {
+    padding-top: 40px;
+    font-size: 30px;
+  }
+
+  .card-desc {
+    font-size: 17px;
+  }
+
+  .my-projects {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 755.77px) and (min-width: 626px) {
+  .card-img {
+    width: 270px;
+    height: 270px;
+  }
+
+  .cardHeading {
+    padding-top: 26px;
+    font-size: 24px;
+  }
+
+  .card-desc {
+    font-size: 14px;
+  }
+
+  .my-projects {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 625.77px) {
+  .card-img {
+    width: 240px;
+    height: 240px;
+  }
+
+  .cardHeading {
+    padding-top: 18px;
+    font-size: 23px;
+  }
+
+  .card-desc {
+    font-size: 12px;
+  }
+
+  .my-projects {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 1131.77px) and (min-width: 992px) {
+  .contact-1 {
+    height: 262px;
+    width: 262px;
+  }
+
+  .contact-2 {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 991.77px) and (min-width: 708px) {
+  .contact-1 {
+    height: 300px;
+    width: 300px;
+  }
+
+  .contact-2 {
+    font-size: 125px;
+  }
+
+  .contact-grid {
+    padding: 70px;
+  }
+}
+
+@media (max-width: 707.77px) {
+  .contact-1 {
+    height: 270px;
+    width: 270px;
+  }
+
+  .contact-2 {
+    font-size: 100px;
+  }
+
+  .contact-grid {
+    padding: 70px;
+  }
+}
+
+@media (max-width: 1048.77px) and (min-width: 952px) {
+  .about-text {
+    font-size: 180px;
+  }
+}
+
+@media (max-width: 951.77px) and (min-width: 802px) {
+  .about-text {
+    font-size: 155px;
+  }
+}
+
+@media (max-width: 801.77px) and (min-width: 686px) {
+  .about-text {
+    font-size: 130px;
+  }
+}
+
+@media (max-width: 685.77px) {
+  .about-text {
+    font-size: 110px;
+  }
 }

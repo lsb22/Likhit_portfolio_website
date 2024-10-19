@@ -4,9 +4,8 @@ const About = () => {
   return (
     <Box data-scroll-section bgColor="black" width="100%" minHeight="100vh">
       <Text
+        className="about-text"
         color="white"
-        fontSize="210px"
-        fontWeight="500"
         data-scroll
         data-scroll-speed="-6"
         data-scroll-direction="horizontal"
@@ -14,8 +13,7 @@ const About = () => {
         Know
       </Text>
       <Text
-        fontSize="210px"
-        fontWeight="500"
+        className="about-text"
         data-scroll
         data-scroll-speed="6"
         data-scroll-direction="horizontal"

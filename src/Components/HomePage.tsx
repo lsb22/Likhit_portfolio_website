@@ -56,7 +56,7 @@ const HomePage = () => {
         );
     });
 
-    mm.add("(max-width:1121.55px) and (min-width:992px)", () => {
+    mm.add("(max-width:1121.55px) and (min-width:1045px)", () => {
       // don't forget to add pixel at the end i.e max-width: 11px
       let timeLine = gsap.timeline();
       timeLine
@@ -80,7 +80,7 @@ const HomePage = () => {
             y: -280,
             x: -50,
             position: "absolute", // this is what making scaling work and holding the text in the same place
-            scale: 10,
+            scale: 9,
           },
           {
             duration: 0.5,
@@ -91,6 +91,105 @@ const HomePage = () => {
           }
         );
     });
+
+    mm.add("(max-width:1045px) and (min-width:992px)", () => {
+      // don't forget to add pixel at the end i.e max-width: 11px
+      let timeLine = gsap.timeline();
+      timeLine
+        .fromTo(
+          profileRef.current,
+          {
+            x: 250,
+            y: 850,
+            borderRadius: "20px",
+          },
+          {
+            y: 160,
+            duration: 1,
+            ease: "power4.inOut",
+            borderRadius: "100%",
+          }
+        )
+        .fromTo(
+          nameRef.current,
+          {
+            y: -350,
+            x: -50,
+            position: "absolute", // this is what making scaling work and holding the text in the same place
+            scale: 7,
+            wordSpacing: 10,
+          },
+          {
+            duration: 0.5,
+            opacity: 1,
+            ease: "power4.inOut",
+            color: "whitesomke",
+            fontWeight: "bold",
+          }
+        );
+    });
+
+    mm.add("(max-width:992px) and (min-width:873px)", () => {
+      // don't forget to add pixel at the end i.e max-width: 11px
+      let timeLine = gsap.timeline();
+      timeLine
+        .fromTo(
+          profileRef.current,
+          {
+            x: 10,
+            y: 850,
+            borderRadius: "20px",
+          },
+          {
+            y: 160,
+            duration: 1,
+            ease: "power4.inOut",
+            borderRadius: "100%",
+          }
+        )
+        .fromTo(
+          nameRef.current,
+          {
+            y: -580,
+            x: 430,
+            position: "absolute", // this is what making scaling work and holding the text in the same place
+            scale: 6,
+          },
+          {
+            duration: 0.5,
+            opacity: 1,
+            ease: "power4.inOut",
+            color: "whitesomke",
+            fontWeight: "bold",
+            wordSpacing: 50,
+          }
+        );
+    });
+
+    mm.add("(max-width:872px)", () => {
+      const timeline = gsap.timeline();
+
+      timeline
+        .fromTo(
+          profileRef.current,
+          {
+            x: -30,
+            y: 850,
+            borderRadius: "20px",
+          },
+          {
+            y: 120,
+            duration: 1,
+            ease: "power4.inOut",
+            borderRadius: "100%",
+            border: "2px solid white",
+            boxShadow: "0 0 5px white, 0 0 10px coral, 0 0 15px white",
+          }
+        )
+        .to(nameRef.current, {
+          opacity: 0,
+        });
+    });
   }, []);
 
   return (
@@ -99,6 +198,7 @@ const HomePage = () => {
       columns={{ base: 1, lg: 2 }}
       className="homePage"
       data-scroll-section
+      position="relative"
     >
       <GridItem display="flex" justifyContent="center">
         <Image
@@ -144,7 +244,7 @@ const HomePage = () => {
             Web Developer
           </Text>
         </Box>
-        <Box ref={nameRef} opacity="0">
+        <Box className="namastae" ref={nameRef} opacity="0">
           {/*for gsap to work refer elements through div or box, not directly to something like text */}
           <Text as="i">Namastae</Text>
         </Box>
