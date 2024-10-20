@@ -1,8 +1,21 @@
 import { Box, HStack, Text } from "@chakra-ui/react";
 
 const About = () => {
+  const handleMouseEnter = () => {
+    const ele: HTMLDivElement = document.querySelector(".cursor-outline")!;
+    ele.classList.add("hovering3");
+    ele.style.backgroundColor = "white";
+  };
+
+  const handleMouseLeave = () => {
+    const ele: HTMLDivElement = document.querySelector(".cursor-outline")!;
+    ele.classList.remove("hovering3");
+    ele.style.backgroundColor = "black";
+  };
+
   return (
     <Box
+      className="section-about"
       data-scroll-section
       bgColor="black"
       width="100%"
@@ -31,7 +44,11 @@ const About = () => {
       {/* data-scroll-offset="bottom of viewPort,top of viewPort" */}
 
       <Box className="about-name" id="name">
-        <HStack className="t1">
+        <HStack
+          className="t1"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
           <Box data-scroll data-scroll-repeat data-scroll-speed="5" mr={5}>
             I'm
           </Box>

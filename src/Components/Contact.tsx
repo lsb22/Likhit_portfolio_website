@@ -38,10 +38,24 @@ const Contact = () => {
       });
   };
 
+  const handleMouseEnter = () => {
+    const ele: HTMLDivElement = document.querySelector(".cursor-outline")!;
+    ele.classList.add("hovering2");
+    ele.style.backgroundColor = "white";
+  };
+
+  const handleMouseLeave = () => {
+    const ele: HTMLDivElement = document.querySelector(".cursor-outline")!;
+    ele.classList.remove("hovering2");
+    ele.style.backgroundColor = "black";
+  };
+
   return (
     <Box className="contact" backgroundColor="black" data-scroll-section>
       <Flex as="b" fontSize="70px" fontStyle="600" justifyContent="center">
-        Contact me
+        <Box onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          Contact me
+        </Box>
       </Flex>
       <SimpleGrid
         className="contact-grid"

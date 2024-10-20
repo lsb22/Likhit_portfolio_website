@@ -192,6 +192,18 @@ const HomePage = () => {
     });
   }, []);
 
+  const handleMouseEnter = () => {
+    const ele: HTMLDivElement = document.querySelector(".cursor-outline")!;
+    ele.classList.add("hovering2");
+    ele.style.backgroundColor = "white";
+  };
+
+  const handleMouseLeave = () => {
+    const ele: HTMLDivElement = document.querySelector(".cursor-outline")!;
+    ele.classList.remove("hovering2");
+    ele.style.backgroundColor = "black";
+  };
+
   return (
     <SimpleGrid
       bgColor="black"
@@ -223,7 +235,13 @@ const HomePage = () => {
         >
           <span className="info-text">Hi there, this is</span>
           <br />{" "}
-          <Text as="i" fontSize="90px" className="info-text">
+          <Text
+            as="i"
+            fontSize="90px"
+            className="info-text"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
             LIKHIT S B
           </Text>
           <br />

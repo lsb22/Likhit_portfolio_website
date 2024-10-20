@@ -25,6 +25,7 @@ body {
   border: 2px solid white;
   box-shadow: 0 0 20px #2696e8, 0 0 60px #2696e8, 0 0 100px #2696e8;
   animation: colors 5s infinite alternate;
+  mix-blend-mode: difference;
 }
 
 @keyframes colors {
@@ -45,6 +46,7 @@ body {
   border-radius: 50%;
   z-index: 1;
   pointer-events: none;
+  transition: transform 0.3s;
 }
 
 .homePage,
@@ -59,6 +61,19 @@ body {
   width: 100%;
   background-color: black;
 }
+
+.cursor-outline.hovering {
+  transform: scale(2);
+}
+
+.cursor-outline.hovering2 {
+  transform: scale(6);
+}
+
+.cursor-outline.hovering3 {
+  transform: scale(8);
+}
+
 /* 
 .container {
   display: flex;
@@ -440,5 +455,11 @@ body {
 @media (max-width: 625.77px) {
   .end-section {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 912px) {
+  .cursor-outline.hovering3 {
+    transform: scale(5);
   }
 }
