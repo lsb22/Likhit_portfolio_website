@@ -1,4 +1,12 @@
-import { Box, HStack, Link, Text, Tooltip, useToast } from "@chakra-ui/react";
+import {
+  Badge,
+  Box,
+  HStack,
+  Link,
+  Text,
+  Tooltip,
+  useToast,
+} from "@chakra-ui/react";
 
 const Conclude = () => {
   const toast = useToast();
@@ -36,16 +44,43 @@ const Conclude = () => {
       alignItems="center"
     >
       <Box>
-        <Text>Thanks for visitng. Wanna build your dream websites?.</Text>
+        <Text>
+          Thanks for{" "}
+          <Box display="inline" color="pink">
+            visitng.
+          </Box>{" "}
+          Wanna build your{" "}
+          <Box display="inline" color="blue.200">
+            dream
+          </Box>{" "}
+          websites?.
+        </Text>
         <Text textAlign="center" mb={5}>
-          Connect with me!!!
+          Connect with{" "}
+          <Box display="inline" color="lightcoral">
+            me!
+          </Box>
         </Text>
         <HStack justifyContent="center" spacing={10}>
           <Tooltip label="Click to copy" hasArrow>
-            <Link onClick={handleClick}>Email</Link>
+            <Link onClick={handleClick}>
+              <Badge
+                className="conclude-badge"
+                fontSize={{ lg: 20, sm: 15 }}
+                colorScheme="green"
+              >
+                Email
+              </Badge>
+            </Link>
           </Tooltip>
           <Link href="https://www.linkedin.com/in/likhitsb156" isExternal>
-            LinkedIn
+            <Badge
+              className="conclude-badge"
+              fontSize={{ lg: 20, sm: 15 }}
+              colorScheme="teal"
+            >
+              LinkedIn
+            </Badge>
           </Link>
         </HStack>
       </Box>

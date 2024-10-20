@@ -27,7 +27,7 @@ const Projects = () => {
         </Text>
       </Flex>
       <hr className="animate-hr" data-scroll data-scroll-offset="18" />
-      <SimpleGrid columns={1} spacing={5} padding={10}>
+      <SimpleGrid className="project-grid" columns={1} spacing={5}>
         <GridItem key={0}>
           <ProjectCard index={0}>
             <VStack>

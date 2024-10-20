@@ -123,8 +123,10 @@ body {
 }
 
 .skewsec {
+  font-size: 3.8rem;
+  font-weight: 700;
   transform: skew(15deg) rotate(6deg);
-  padding: 13px 80px;
+  padding: 13px 20px;
   &:last-child {
     transform: skew(-15deg) rotate(-6deg);
     margin-top: 43vh;
@@ -166,6 +168,10 @@ body {
 .about-text {
   font-size: 210px;
   font-weight: 500;
+}
+
+.project-grid {
+  padding: 50px;
 }
 
 @media (max-width: 1207.55px) and (min-width: 1050px) {
@@ -214,6 +220,10 @@ body {
   .my-projects {
     font-size: 80px;
   }
+
+  .project-grid {
+    padding: 30px;
+  }
 }
 
 @media (max-width: 755.77px) and (min-width: 626px) {
@@ -234,6 +244,10 @@ body {
   .my-projects {
     font-size: 70px;
   }
+
+  .project-grid {
+    padding: 20px;
+  }
 }
 
 @media (max-width: 625.77px) {
@@ -243,16 +257,20 @@ body {
   }
 
   .cardHeading {
-    padding-top: 18px;
+    padding-top: 10px;
     font-size: 23px;
   }
 
   .card-desc {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .my-projects {
     font-size: 60px;
+  }
+
+  .project-grid {
+    padding: 10px;
   }
 }
 
@@ -289,7 +307,7 @@ body {
   }
 
   .contact-2 {
-    font-size: 100px;
+    font-size: 80px;
   }
 
   .contact-grid {
@@ -315,8 +333,112 @@ body {
   }
 }
 
-@media (max-width: 685.77px) {
+@media (max-width: 685.77px) and (min-width: 585px) {
   .about-text {
     font-size: 110px;
+  }
+}
+
+@media (max-width: 584.77px) {
+  .about-text {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 1258.77px) and (min-width: 1023px) {
+  .skewsec {
+    font-size: 2.8rem;
+    font-weight: 700;
+    word-spacing: 2px;
+    padding: 13px 20px;
+  }
+
+  .skewsec > .div-1,
+  .div-2 {
+    padding: 10px;
+  }
+
+  .about-name {
+    font-size: 6.4rem;
+  }
+}
+
+@media (max-width: 1022.77px) and (min-width: 920px) {
+  .skewsec {
+    font-size: 2.3rem;
+    font-weight: 700;
+    word-spacing: 2px;
+    padding: 13px 20px;
+  }
+
+  .skewsec > .div-1,
+  .div-2 {
+    padding: 10px;
+  }
+  .about-name {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 919.77px) and (min-width: 710px) {
+  .skewsec {
+    font-size: 2rem;
+    font-weight: 700;
+    word-spacing: 2px;
+    padding: 13px 20px;
+  }
+
+  .skewsec > .div-1,
+  .div-2 {
+    padding: 10px;
+  }
+  .about-name {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 709.77px) and (min-width: 587px) {
+  .skewsec {
+    font-size: 1.7rem;
+    font-weight: 700;
+    word-spacing: 2px;
+    padding: 13px 15px;
+  }
+
+  .skewsec > .div-1,
+  .div-2 {
+    padding: 10px;
+  }
+  .about-name {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 586.77px) {
+  .skewsec {
+    font-size: 1.4rem;
+    font-weight: 700;
+    word-spacing: 2px;
+    padding: 13px 10px;
+  }
+
+  .skewsec > .div-1,
+  .div-2 {
+    padding: 10px;
+  }
+  .about-name {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 824px) and (min-width: 626px) {
+  .end-section {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 625.77px) {
+  .end-section {
+    font-size: 1.2rem;
   }
 }

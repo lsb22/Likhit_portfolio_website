@@ -2,7 +2,14 @@ import { Box, HStack, Text } from "@chakra-ui/react";
 
 const About = () => {
   return (
-    <Box data-scroll-section bgColor="black" width="100%" minHeight="100vh">
+    <Box
+      data-scroll-section
+      bgColor="black"
+      width="100%"
+      minHeight="100vh"
+      pt={40}
+      pb={100}
+    >
       <Text
         className="about-text"
         color="white"
@@ -55,14 +62,15 @@ const About = () => {
         </HStack>
         <Box className="skewsec">
           <Box
+            className="div-1"
             bgColor="white"
             color="black"
-            fontSize="3.8rem"
             mt="70px"
             data-scroll
             data-scroll-speed="20"
             data-scroll-direction="horizontal"
             data-scroll-target="#name"
+            textAlign="center"
           >
             3rd Year Engineering Student At JSSATEB
           </Box>
@@ -70,13 +78,14 @@ const About = () => {
 
         <Box className="skewsec">
           <Box
+            className="div-2"
             bgColor="white"
             color="black"
-            fontSize="3.8rem"
             data-scroll
             data-scroll-speed="-20"
             data-scroll-direction="horizontal"
             data-scroll-target="#name"
+            textAlign="center"
           >
             I Love coding and I am a cricket lover.
           </Box>
