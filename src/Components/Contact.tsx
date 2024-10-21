@@ -77,7 +77,13 @@ const Contact = () => {
               position="relative"
               onClick={handleClick}
             >
-              <Flex justifyContent="center">
+              <Flex
+                justifyContent="center"
+                _hover={{
+                  boxShadow: "0 0 30px",
+                  cursor: "pointer",
+                }}
+              >
                 <Image className="contact-1" src={email} />
               </Flex>
             </Card>
@@ -90,6 +96,10 @@ const Contact = () => {
             border="2px solid white"
             borderRadius="10px"
             py="56px"
+            _hover={{
+              boxShadow: "0 0 30px",
+              cursor: "pointer",
+            }}
           >
             <Flex justifyContent="center">
               <Link
