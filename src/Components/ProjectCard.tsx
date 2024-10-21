@@ -15,20 +15,24 @@ const ProjectCard = ({ index, children }: Props) => {
   const img = images[index];
 
   return (
-    <Card
-      backgroundColor="#0e0d0d"
-      color="white"
-      border="2px solid white"
-      borderRadius="10px"
-      overflow="hidden"
-      direction={index % 2 == 0 ? "row" : "row-reverse"}
-      mb={20}
-    >
-      <Box>
-        <Image className="card-img" src={img} objectFit="cover" mt={-1} />
-      </Box>
-      <CardBody>{children}</CardBody>
-    </Card>
+    <Box className="project-card">
+      <Card
+        backgroundColor="#0e0d0d"
+        color="white"
+        borderRadius={{ sm: 10, xl: 14 }}
+        borderColor="white"
+        borderStyle="solid"
+        borderWidth={{ sm: 2, xl: 4 }}
+        overflow="hidden"
+        direction={index % 2 == 0 ? "row" : "row-reverse"}
+        // mb={{ sm: 10, xl: 30 }}
+      >
+        <Box>
+          <Image className="card-img" src={img} objectFit="cover" mt={-1} />
+        </Box>
+        <CardBody className="project-card-body">{children}</CardBody>
+      </Card>
+    </Box>
   );
 };
 

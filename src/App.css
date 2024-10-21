@@ -1,10 +1,20 @@
 @import "locomotive-scroll/dist/locomotive-scroll.css";
+
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   overflow-y: scroll;
   cursor: none;
+}
+
+#profile_img {
+  display: block;
+  height: 300px;
+}
+
+.home-text {
+  font-size: xx-large;
 }
 
 .header {
@@ -187,6 +197,36 @@ body {
 
 .project-grid {
   padding: 50px;
+}
+
+.home-1 {
+  font-size: 90px;
+}
+
+.home-2 {
+  font-size: 60px;
+}
+
+.home-3 {
+  font-size: 50px;
+  padding-left: 162px;
+}
+
+.project-card {
+  margin-bottom: 50px;
+}
+
+.header,
+.nav-text {
+  font-size: 27px;
+}
+
+.contact-text {
+  font-size: 70px;
+}
+
+.conclude-badge {
+  font-size: 22px;
 }
 
 @media (max-width: 1207.55px) and (min-width: 1050px) {
@@ -461,5 +501,599 @@ body {
 @media (max-width: 912px) {
   .cursor-outline.hovering3 {
     transform: scale(5);
+  }
+}
+
+/* media for larger screens */
+
+@media (min-width: 1550px) and (max-width: 1680px) {
+  #profile_img {
+    height: 44%;
+    width: 48%;
+  }
+
+  .home-1 {
+    font-size: 7rem;
+  }
+
+  .home-2,
+  .home-3 {
+    font-size: 4.5rem;
+  }
+
+  .home-text span {
+    font-size: 2.1rem;
+  }
+
+  .project-grid {
+    padding: 6vh;
+  }
+
+  .card-img {
+    width: 700px;
+    height: 680px;
+  }
+
+  .cardHeading {
+    font-size: 67px;
+    padding-top: 100px;
+  }
+
+  .card-desc {
+    font-size: 30px;
+  }
+
+  .my-projects {
+    font-size: 100px;
+  }
+
+  .project-card {
+    margin-bottom: 72px;
+  }
+
+  .header,
+  .nav-text {
+    font-size: 35px;
+  }
+
+  .contact-text {
+    font-size: 80px;
+  }
+
+  .contact-1 {
+    width: 360px;
+    height: 360px;
+  }
+
+  .contact-2 {
+    font-size: 165px;
+  }
+
+  .about-text {
+    font-size: 240px;
+  }
+
+  .end-section {
+    font-size: 40px;
+  }
+
+  .conclude-badge {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 1680.77px) and (max-width: 1710px) {
+  #profile_img {
+    margin-top: 5%;
+    height: 42%;
+    width: 46%;
+  }
+
+  .home-1 {
+    font-size: 120px;
+  }
+
+  .home-2,
+  .home-3 {
+    font-size: 75px;
+  }
+
+  .home-text span {
+    font-size: 36px;
+  }
+
+  .home-text {
+    margin-top: 4%;
+  }
+
+  .project-grid {
+    padding: 6vh;
+  }
+
+  .card-img {
+    width: 750px;
+    height: 720px;
+  }
+
+  .cardHeading {
+    font-size: 70px;
+    padding-top: 100px;
+  }
+
+  .card-desc {
+    font-size: 30px;
+  }
+
+  .my-projects {
+    font-size: 120px;
+  }
+
+  .project-card {
+    margin-bottom: 70px;
+  }
+
+  .header,
+  .nav-text {
+    font-size: 38px;
+  }
+
+  .contact-text {
+    font-size: 90px;
+  }
+
+  .contact-1 {
+    width: 380px;
+    height: 380px;
+  }
+
+  .contact-2 {
+    font-size: 180px;
+  }
+
+  .about-text {
+    font-size: 260px;
+  }
+
+  .about-name {
+    font-size: 140px;
+  }
+
+  .end-section {
+    font-size: 42px;
+  }
+
+  .conclude-badge {
+    font-size: 28px;
+  }
+
+  .home-3 {
+    padding-left: 180px;
+  }
+}
+
+@media (min-width: 1710.77px) and (max-width: 1920px) {
+  #profile_img {
+    margin-top: 5%;
+    height: 42%;
+    width: 46%;
+  }
+
+  .home-1 {
+    font-size: 140px;
+  }
+
+  .home-2,
+  .home-3 {
+    font-size: 86px;
+  }
+
+  .home-text span {
+    font-size: 40px;
+  }
+
+  .home-text {
+    margin-top: 5%;
+  }
+
+  .project-grid {
+    padding: 6vh;
+  }
+
+  .card-img {
+    width: 800px;
+    height: 760px;
+  }
+
+  .cardHeading {
+    font-size: 85px;
+    padding-top: 120px;
+  }
+
+  .card-desc {
+    font-size: 30px;
+  }
+
+  .my-projects {
+    font-size: 140px;
+  }
+
+  .project-card {
+    margin-bottom: 80px;
+  }
+
+  .cursor-outline {
+    transform: scale(1.5);
+  }
+
+  .header,
+  .nav-text {
+    font-size: 43px;
+  }
+
+  .contact-text {
+    font-size: 100px;
+  }
+
+  .contact-1 {
+    width: 400px;
+    height: 400px;
+  }
+
+  .contact-2 {
+    font-size: 193px;
+  }
+
+  .about-text {
+    font-size: 280px;
+  }
+
+  .about-name {
+    font-size: 170px;
+  }
+
+  .skewsec {
+    font-size: 70px;
+    .div-1 {
+      margin-top: 10vh;
+    }
+  }
+
+  .end-section {
+    font-size: 45px;
+  }
+
+  .conclude-badge {
+    font-size: 30px;
+  }
+
+  .home-3 {
+    padding-left: 190px;
+  }
+}
+
+@media (min-width: 1920.77px) and (max-width: 2580px) {
+  #profile_img {
+    margin-top: 9%;
+    height: 37%;
+    width: 41%;
+  }
+
+  .home-1 {
+    font-size: 150px;
+  }
+
+  .home-2,
+  .home-3 {
+    font-size: 110px;
+  }
+
+  .home-text span {
+    font-size: 47px;
+  }
+
+  .home-text {
+    margin-top: 9%;
+  }
+  .project-grid {
+    padding: 5vh;
+  }
+
+  .card-img {
+    width: 1100px;
+    height: 1060px;
+  }
+
+  .cardHeading {
+    font-size: 110px;
+    padding-top: 140px;
+  }
+
+  .card-desc {
+    font-size: 50px;
+  }
+
+  .my-projects {
+    font-size: 180px;
+  }
+
+  .project-card {
+    margin-bottom: 100px;
+  }
+
+  .project-card-body {
+    margin-left: 20px;
+  }
+
+  .cursor-outline {
+    transform: scale(2);
+  }
+
+  .cursor-outline {
+    transform: scale(2);
+  }
+
+  .cursor-dot {
+    transform: scale(1);
+  }
+
+  .header,
+  .nav-text {
+    font-size: 58px;
+  }
+
+  .contact-text {
+    font-size: 130px;
+  }
+
+  .contact-1 {
+    width: 450px;
+    height: 450px;
+  }
+
+  .contact-2 {
+    font-size: 224px;
+  }
+
+  .about-text {
+    font-size: 370px;
+  }
+
+  .about-name {
+    font-size: 200px;
+  }
+
+  .skewsec {
+    font-size: 90px;
+    .div-1 {
+      margin-top: 10vh;
+    }
+  }
+
+  .end-section {
+    font-size: 54px;
+  }
+
+  .conclude-badge {
+    font-size: 36px;
+  }
+
+  .home-3 {
+    padding-left: 180px;
+  }
+}
+
+@media (min-width: 2580.77px) and (max-width: 3850px) {
+  #profile_img {
+    margin-top: 15%;
+    height: 35%;
+    width: 39%;
+  }
+
+  .home-1 {
+    font-size: 240px;
+  }
+
+  .home-2,
+  .home-3 {
+    font-size: 160px;
+  }
+
+  .home-text span {
+    font-size: 80px;
+  }
+
+  .home-text {
+    margin-top: 12%;
+  }
+
+  .project-grid {
+    padding: 5vh;
+  }
+
+  .card-img {
+    width: 1600px;
+    height: 1560px;
+  }
+
+  .cardHeading {
+    font-size: 160px;
+    padding-top: 190px;
+  }
+
+  .card-desc {
+    font-size: 68px;
+  }
+
+  .my-projects {
+    font-size: 230px;
+  }
+
+  .project-card {
+    margin-bottom: 150px;
+  }
+
+  .project-card-body {
+    margin-left: 30px;
+  }
+
+  .cursor-outline {
+    transform: scale(3);
+  }
+
+  .cursor-dot {
+    transform: scale(2);
+  }
+
+  .header,
+  .nav-text {
+    font-size: 80px;
+  }
+
+  .contact-text {
+    font-size: 180px;
+  }
+
+  .contact-1 {
+    width: 550px;
+    height: 550px;
+  }
+
+  .contact-2 {
+    font-size: 290px;
+  }
+
+  .about-text {
+    font-size: 590px;
+  }
+
+  .about-name {
+    font-size: 300px;
+  }
+
+  .skewsec {
+    font-size: 120px;
+    .div-1 {
+      margin-top: 15vh;
+    }
+  }
+
+  .end-section {
+    font-size: 78px;
+  }
+
+  .conclude-badge {
+    font-size: 52px;
+  }
+
+  .home-3 {
+    padding-left: 280px;
+  }
+}
+
+@media (min-width: 3850.77px) {
+  #profile_img {
+    margin-top: 20%;
+    height: 40%;
+    width: 42%;
+  }
+
+  .home-1 {
+    font-size: 340px;
+  }
+
+  .home-2,
+  .home-3 {
+    font-size: 220px;
+  }
+
+  .home-text span {
+    font-size: 110px;
+  }
+
+  .home-text {
+    margin-top: 15%;
+  }
+
+  .project-grid {
+    padding: 6vh;
+  }
+
+  .card-img {
+    width: 2160px;
+    height: 2160px;
+  }
+
+  .cardHeading {
+    font-size: 190px;
+    padding-top: 280px;
+  }
+
+  .card-desc {
+    font-size: 90px;
+  }
+
+  .my-projects {
+    font-size: 350px;
+  }
+
+  .project-card {
+    margin-bottom: 250px;
+  }
+
+  .project-card-body {
+    margin-left: 50px;
+  }
+
+  .cursor-outline {
+    transform: scale(4);
+  }
+
+  .cursor-dot {
+    transform: scale(3);
+  }
+
+  .header,
+  .nav-text {
+    font-size: 105px;
+  }
+
+  .contact-text {
+    font-size: 220px;
+  }
+
+  .contact-1 {
+    width: 720px;
+    height: 720px;
+  }
+
+  .contact-2 {
+    font-size: 408px;
+  }
+
+  .about-text {
+    font-size: 800px;
+  }
+
+  .about-name {
+    font-size: 400px;
+  }
+
+  .skewsec {
+    font-size: 150px;
+    .div-1 {
+      margin-top: 20vh;
+    }
+  }
+
+  .end-section {
+    font-size: 98px;
+  }
+
+  .conclude-badge {
+    font-size: 72px;
+  }
+
+  .home-3 {
+    padding-left: 340px;
   }
 }

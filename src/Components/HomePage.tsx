@@ -72,6 +72,8 @@ const HomePage = () => {
             duration: 1,
             ease: "power4.inOut",
             borderRadius: "100%",
+            border: "2px solid white",
+            boxShadow: "0 0 5px white, 0 0 10px coral, 0 0 15px white",
           }
         )
         .fromTo(
@@ -104,16 +106,18 @@ const HomePage = () => {
             borderRadius: "20px",
           },
           {
-            y: 160,
+            y: 190,
             duration: 1,
             ease: "power4.inOut",
             borderRadius: "100%",
+            border: "2px solid white",
+            boxShadow: "0 0 5px white, 0 0 10px coral, 0 0 15px white",
           }
         )
         .fromTo(
           nameRef.current,
           {
-            y: -350,
+            y: -300,
             x: -50,
             position: "absolute", // this is what making scaling work and holding the text in the same place
             scale: 7,
@@ -145,6 +149,8 @@ const HomePage = () => {
             duration: 1,
             ease: "power4.inOut",
             borderRadius: "100%",
+            border: "2px solid white",
+            boxShadow: "0 0 5px white, 0 0 10px coral, 0 0 15px white",
           }
         )
         .fromTo(
@@ -173,7 +179,7 @@ const HomePage = () => {
         .fromTo(
           profileRef.current,
           {
-            x: -30,
+            x: -5,
             y: 850,
             borderRadius: "20px",
           },
@@ -184,6 +190,7 @@ const HomePage = () => {
             borderRadius: "100%",
             border: "2px solid white",
             boxShadow: "0 0 5px white, 0 0 10px coral, 0 0 15px white",
+            scale: 1.2,
           }
         )
         .to(nameRef.current, {
@@ -214,11 +221,9 @@ const HomePage = () => {
     >
       <GridItem display="flex" justifyContent="center">
         <Image
-          // opacity="0"
           id="profile_img"
           src={profileImg}
           border="none"
-          height="300px"
           ref={profileRef}
           objectFit="cover"
           pointerEvents="none"
@@ -226,9 +231,8 @@ const HomePage = () => {
       </GridItem>
       <GridItem>
         <Box
-          className="info-text"
+          className="info-text home-text"
           fontWeight="bold"
-          fontSize="xx-large"
           opacity="0"
           ref={infoRef}
           display="inline-block"
@@ -237,8 +241,7 @@ const HomePage = () => {
           <br />{" "}
           <Text
             as="i"
-            fontSize="90px"
-            className="info-text"
+            className="info-text home-1"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
@@ -246,15 +249,14 @@ const HomePage = () => {
           </Text>
           <br />
           <span className="info-text">I'm a</span>
-          <Text as="i" fontSize="60px" ml={5} className="info-text">
+          <Text as="i" ml={5} className="info-text home-2">
             FullStack
           </Text>{" "}
           <br />
           <Text
             as="em"
-            pl={40}
-            fontSize="50px"
-            className="info-text"
+            // pl={40}
+            className="info-text home-3"
             // data-scroll
             // data-scroll-speed="-10"
             // data-scroll-direction="horizontal"

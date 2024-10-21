@@ -52,7 +52,12 @@ const Contact = () => {
 
   return (
     <Box className="contact" backgroundColor="black" data-scroll-section>
-      <Flex as="b" fontSize="70px" fontStyle="600" justifyContent="center">
+      <Flex
+        as="b"
+        fontStyle="600"
+        justifyContent="center"
+        className="contact-text"
+      >
         <Box onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           Contact me
         </Box>

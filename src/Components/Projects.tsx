@@ -20,7 +20,7 @@ const Projects = () => {
           as="b"
           fontFamily="sans-serif"
           data-scroll
-          data-scroll-speed="3"
+          data-scroll-speed="5"
           // data-scroll-direction="horizontal"
         >
           My projects.

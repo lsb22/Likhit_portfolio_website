@@ -64,22 +64,14 @@ const Conclude = () => {
         <HStack justifyContent="center" spacing={10}>
           <Tooltip label="Click to copy" hasArrow>
             <Link onClick={handleClick}>
-              <Badge
-                className="conclude-badge"
-                fontSize={{ lg: 20, sm: 15 }}
-                colorScheme="green"
-              >
-                Email
+              <Badge colorScheme="green">
+                <Box className="conclude-badge">Email</Box>
               </Badge>
             </Link>
           </Tooltip>
           <Link href="https://www.linkedin.com/in/likhitsb156" isExternal>
-            <Badge
-              className="conclude-badge"
-              fontSize={{ lg: 20, sm: 15 }}
-              colorScheme="teal"
-            >
-              LinkedIn
+            <Badge colorScheme="teal">
+              <Box className="conclude-badge">LinkedIn</Box>
             </Badge>
           </Link>
         </HStack>
