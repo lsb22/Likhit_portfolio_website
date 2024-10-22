@@ -2,7 +2,7 @@ import { gsap } from "gsap";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import profileImg from "../assets/images/lsb-img-5.png";
-import { Box, GridItem, Image, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, GridItem, Image, Show, SimpleGrid, Text } from "@chakra-ui/react";
 
 const HomePage = () => {
   const profileRef = useRef(null);
@@ -68,7 +68,7 @@ const HomePage = () => {
             borderRadius: "20px",
           },
           {
-            y: 160,
+            y: 180,
             duration: 1,
             ease: "power4.inOut",
             borderRadius: "100%",
@@ -172,7 +172,7 @@ const HomePage = () => {
         );
     });
 
-    mm.add("(max-width:872px)", () => {
+    mm.add("(max-width:872px) and (min-width:421px)", () => {
       const timeline = gsap.timeline();
 
       timeline
@@ -182,6 +182,64 @@ const HomePage = () => {
             x: -5,
             y: 850,
             borderRadius: "20px",
+            height: "220px",
+            width: "220px",
+          },
+          {
+            y: 120,
+            duration: 1,
+            ease: "power4.inOut",
+            borderRadius: "100%",
+            border: "2px solid white",
+            boxShadow: "0 0 5px white, 0 0 10px coral, 0 0 15px white",
+            scale: 1.2,
+          }
+        )
+        .to(nameRef.current, {
+          opacity: 0,
+        });
+    });
+
+    mm.add("(max-width:420.77px) and (min-width: 375px)", () => {
+      const timeline = gsap.timeline();
+
+      timeline
+        .fromTo(
+          profileRef.current,
+          {
+            x: 0,
+            y: 850,
+            borderRadius: "20px",
+            height: "180px",
+            width: "180px",
+          },
+          {
+            y: 120,
+            duration: 1,
+            ease: "power4.inOut",
+            borderRadius: "100%",
+            border: "2px solid white",
+            boxShadow: "0 0 5px white, 0 0 10px coral, 0 0 15px white",
+            scale: 1.2,
+          }
+        )
+        .to(nameRef.current, {
+          opacity: 0,
+        });
+    });
+
+    mm.add("(max-width:374.77px)", () => {
+      const timeline = gsap.timeline();
+
+      timeline
+        .fromTo(
+          profileRef.current,
+          {
+            x: 0,
+            y: 850,
+            borderRadius: "20px",
+            height: "180px",
+            width: "180px",
           },
           {
             y: 120,
@@ -237,7 +295,7 @@ const HomePage = () => {
           ref={infoRef}
           display="inline-block"
         >
-          <span className="info-text">Hi there, this is</span>
+          <span className="info-text home-5">Hi there, this is</span>
           <br />{" "}
           <Text
             as="i"
@@ -248,14 +306,13 @@ const HomePage = () => {
             LIKHIT S B
           </Text>
           <br />
-          <span className="info-text">I'm a</span>
-          <Text as="i" ml={5} className="info-text home-2">
+          <span className="info-text home-4">I'm a</span>
+          <Text as="i" className="info-text home-2">
             FullStack
           </Text>{" "}
           <br />
           <Text
             as="em"
-            // pl={40}
             className="info-text home-3"
             // data-scroll
             // data-scroll-speed="-10"

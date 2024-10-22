@@ -1,12 +1,4 @@
-import {
-  Badge,
-  Box,
-  HStack,
-  Link,
-  Text,
-  Tooltip,
-  useToast,
-} from "@chakra-ui/react";
+import { Box, HStack, Link, Text, Tooltip, useToast } from "@chakra-ui/react";
 
 const Conclude = () => {
   const toast = useToast();

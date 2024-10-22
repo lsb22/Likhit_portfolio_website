@@ -205,11 +205,16 @@ body {
 
 .home-2 {
   font-size: 60px;
+  margin-left: 5px;
 }
 
 .home-3 {
   font-size: 50px;
   padding-left: 162px;
+}
+
+.home-4 {
+  margin-right: 10px;
 }
 
 .project-card {
@@ -326,6 +331,14 @@ body {
 
   .project-grid {
     padding: 10px;
+  }
+
+  .header {
+    font-size: 22px;
+  }
+
+  .nav-text {
+    font-size: 22px;
   }
 }
 
@@ -464,6 +477,16 @@ body {
   .div-2 {
     padding: 10px;
   }
+
+  .skewsec {
+    .div-1 {
+      margin-top: 80px;
+    }
+
+    .div-2 {
+      margin-top: 3vh;
+    }
+  }
   .about-name {
     font-size: 4rem;
   }
@@ -483,6 +506,10 @@ body {
   }
   .about-name {
     font-size: 4rem;
+  }
+
+  .conclude-badge {
+    font-size: 15px;
   }
 }
 
@@ -504,9 +531,276 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  .project-card {
+    border: 1.7px solid white;
+    border-radius: 2px;
+  }
+}
+
+@media (max-width: 480px) and (min-width: 464px) {
+  .header {
+    font-size: 18px;
+  }
+
+  .nav-text {
+    font-size: 18px;
+  }
+
+  .project-grid {
+    padding: 17px;
+  }
+
+  .card-img {
+    height: 170px;
+    width: 170px;
+  }
+
+  .cardHeading {
+    font-size: 18px;
+  }
+
+  .card-desc {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 463.77px) and (min-width: 386px) {
+  .my-projects {
+    font-size: 50px;
+  }
+
+  .project-grid {
+    padding: 17px;
+  }
+
+  .card-img {
+    height: 160px;
+    width: 160px;
+  }
+
+  .cardHeading {
+    font-size: 14px;
+  }
+
+  .card-desc {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 386.77px) and (min-width: 375px) {
+  .my-projects {
+    font-size: 40px;
+  }
+
+  .project-grid {
+    padding: 10px;
+  }
+
+  .card-img {
+    height: 140px;
+    width: 140px;
+  }
+
+  .cardHeading {
+    font-size: 14px;
+    padding-top: 0px;
+  }
+
+  .card-desc {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 374.77px) {
+  .my-projects {
+    font-size: 37px;
+  }
+
+  .project-grid {
+    padding: 5px;
+  }
+
+  .card-img {
+    height: 120px;
+    width: 120px;
+  }
+
+  .cardHeading {
+    font-size: 12px;
+    padding-top: 0px;
+  }
+
+  .card-desc {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 430px) {
+  .header {
+    font-size: 13px;
+  }
+
+  .nav-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 373px) {
+  .header {
+    font-size: 12px;
+  }
+
+  .nav-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) and (min-width: 390px) {
+  .contact-grid {
+    padding: 50px;
+  }
+
+  .contact-text {
+    font-size: 44px;
+  }
+
+  .contact-1 {
+    height: 150px;
+    width: 150px;
+  }
+
+  .contact-2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 389.77px) {
+  .contact-grid {
+    padding: 30px;
+  }
+
+  .contact-text {
+    font-size: 38px;
+  }
+
+  .contact-1 {
+    height: 130px;
+    width: 120px;
+  }
+
+  .contact-2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 487.77px) and (min-width: 437px) {
+  .about-text {
+    font-size: 85px;
+  }
+
+  .about-name {
+    .div-1 {
+      margin-top: 100px;
+    }
+  }
+
+  .skewsec {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 436.77px) and (min-width: 371px) {
+  .about-text {
+    font-size: 75px;
+  }
+
+  .about-name {
+    font-size: 40px;
+    .div-1 {
+      margin-top: 100px;
+    }
+  }
+
+  .skewsec {
+    font-size: 15px;
+    padding: 2px;
+    .div-1,
+    .div-2 {
+      padding: 16px;
+    }
+  }
+}
+
+@media (max-width: 370.77px) {
+  .about-text {
+    font-size: 70px;
+  }
+
+  .about-name {
+    font-size: 30px;
+    .div-1 {
+      margin-top: 100px;
+    }
+  }
+
+  .skewsec {
+    font-size: 15px;
+    padding: 2px;
+    .div-1,
+    .div-2 {
+      padding: 16px;
+    }
+  }
+}
+
+@media (max-width: 509.77px) and (min-width: 411px) {
+  .end-section {
+    font-size: 15px;
+  }
+
+  .conclude-badge {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 410.77px) {
+  .end-section {
+    font-size: 12px;
+  }
+
+  .conclude-badge {
+    font-size: 10px;
+  }
+}
+
 /* media for larger screens */
 
-@media (min-width: 1550px) and (max-width: 1680px) {
+/* @media (min-width: 1122px) and (max-width: 1519px) {
+  .home-text {
+    font-size: xx-large;
+  }
+
+  .home-1 {
+    font-size: 90px;
+  }
+
+  .home-2 {
+    font-size: 60px;
+    margin-left: 5px;
+  }
+
+  .home-3 {
+    font-size: 50px;
+    padding-left: 162px;
+  }
+
+  .home-4 {
+    margin-right: 10px;
+  }
+} */
+
+@media (min-width: 1519.88px) and (max-width: 1680px) {
   #profile_img {
     height: 44%;
     width: 48%;
@@ -579,6 +873,10 @@ body {
 
   .conclude-badge {
     font-size: 26px;
+  }
+
+  .home-3 {
+    padding-left: 170px;
   }
 }
 
