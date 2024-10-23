@@ -470,9 +470,24 @@ body {
     padding: 13px 10px;
   }
 
-  .skewsec > .div-1,
+  /* .skewsec > .div-1,
   .div-2 {
     padding: 10px;
+  } */
+
+  .skewsec {
+    .div-1 {
+      margin-top: 90px;
+    }
+
+    .div-2 {
+      margin-top: 0;
+    }
+
+    .div-1,
+    .div-2 {
+      padding: 10px;
+    }
   }
   .about-name {
     font-size: 4rem;
