@@ -20,7 +20,7 @@ const About = () => {
       bgColor="black"
       width="100%"
       minHeight="100vh"
-      pt={40}
+      // pt={40}
       pb={100}
     >
       <Text

@@ -26,7 +26,7 @@ const HomePage = () => {
             ease: "power3.in",
             border: "1px solid white",
             borderRadius: "20%",
-            duration: 0.7,
+            duration: 0.9,
             opacity: 1,
           }
         )
@@ -172,6 +172,7 @@ const HomePage = () => {
           flexWrap: "wrap",
           justifyContent: "center",
           alignItems: "center",
+          ease: "power4.inOut",
         });
     });
 
@@ -206,6 +207,7 @@ const HomePage = () => {
           flexWrap: "wrap",
           justifyContent: "center",
           alignItems: "center",
+          ease: "power4.inOut",
         });
     });
 
@@ -240,6 +242,7 @@ const HomePage = () => {
           flexWrap: "wrap",
           justifyContent: "center",
           alignItems: "center",
+          ease: "power4.inOut",
         });
     });
 
@@ -274,6 +277,7 @@ const HomePage = () => {
           flexWrap: "wrap",
           justifyContent: "center",
           alignItems: "center",
+          ease: "power4.inOut",
         });
     });
 
@@ -307,6 +311,7 @@ const HomePage = () => {
           flexWrap: "wrap",
           justifyContent: "center",
           alignItems: "center",
+          ease: "power4.inOut",
         });
     });
 
@@ -325,7 +330,7 @@ const HomePage = () => {
           },
           {
             y: 90,
-            duration: 1,
+            duration: 2,
             ease: "power4.inOut",
             borderRadius: "100%",
             border: "2px solid white",
@@ -341,6 +346,7 @@ const HomePage = () => {
           justifyContent: "center",
           alignItems: "center",
           scale: 0.92,
+          ease: "power4.inOut",
         });
     });
   }, []);

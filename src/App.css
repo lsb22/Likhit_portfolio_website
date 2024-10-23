@@ -582,9 +582,44 @@ body {
   }
 }
 
-@media (max-width: 374.77px) {
+@media (max-width: 374.77px) and (min-width: 365px) {
   .my-projects {
     font-size: 37px;
+  }
+
+  .project-card-body {
+    padding: 0;
+  }
+
+  .project-grid {
+    padding: 5px;
+  }
+
+  .card-img {
+    height: 130px;
+    width: 130px;
+    /* height: 120px;
+    width: 120px; */
+  }
+
+  .cardHeading {
+    /* font-size: 12px; */
+    font-size: 15px;
+    padding-top: 0px;
+  }
+
+  .card-desc {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 364.77px) {
+  .my-projects {
+    font-size: 37px;
+  }
+
+  .project-card-body {
+    padding: 0;
   }
 
   .project-grid {
@@ -602,21 +637,21 @@ body {
   }
 
   .card-desc {
-    font-size: 6px;
+    font-size: 7px;
   }
 }
 
 @media (max-width: 430px) {
   .header {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .nav-text {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
-@media (max-width: 373px) {
+/* @media (max-width: 373px) {
   .header {
     font-size: 12px;
   }
@@ -624,7 +659,7 @@ body {
   .nav-text {
     font-size: 12px;
   }
-}
+} */
 
 @media (max-width: 480px) and (min-width: 390px) {
   .contact-grid {
@@ -682,7 +717,7 @@ body {
 
 @media (max-width: 436.77px) and (min-width: 371px) {
   .about-text {
-    font-size: 75px;
+    font-size: 80px;
   }
 
   .about-name {
@@ -704,7 +739,7 @@ body {
 
 @media (max-width: 370.77px) {
   .about-text {
-    font-size: 70px;
+    font-size: 69px;
   }
 
   .about-name {
@@ -890,6 +925,12 @@ body {
 
   .home-4 {
     margin-left: 7px;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 430px) {
+  .section-about {
+    padding-top: 40px;
   }
 }
 
