@@ -106,7 +106,7 @@ const Contact = () => {
                 href="https://www.linkedin.com/in/likhitsb156"
                 _hover={{ textDecoration: "none" }}
               >
-                <Text className="contact-2" fontWeight="600">
+                <Text className="contact-2" fontWeight="600" color="white">
                   Linked{" "}
                   <Box display="inline" bgColor="blue.600" bgClip="text">
                     in
