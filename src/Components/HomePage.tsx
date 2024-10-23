@@ -7,7 +7,6 @@ import { Box, GridItem, Image, Show, SimpleGrid, Text } from "@chakra-ui/react";
 const HomePage = () => {
   const profileRef = useRef(null);
   const infoRef = useRef(null);
-  const nameRef = useRef(null);
 
   useGSAP(() => {
     let mm = gsap.matchMedia();
@@ -56,7 +55,7 @@ const HomePage = () => {
         );
     });
 
-    mm.add("(max-width:1121.55px) and (min-width:1045px)", () => {
+    mm.add("(max-width:1121.55px) and (min-width:1034px)", () => {
       // don't forget to add pixel at the end i.e max-width: 11px
       let timeLine = gsap.timeline();
       timeLine
@@ -68,7 +67,7 @@ const HomePage = () => {
             borderRadius: "20px",
           },
           {
-            y: 180,
+            y: 100,
             duration: 1,
             ease: "power4.inOut",
             borderRadius: "100%",
@@ -76,25 +75,33 @@ const HomePage = () => {
             boxShadow: "0 0 5px white, 0 0 10px coral, 0 0 15px white",
           }
         )
+        .to(profileRef.current, {
+          x: 30,
+          ease: "power4.inOut",
+          duration: 1,
+          borderWidth: "2px",
+          borderRadius: "100%",
+          width: "300px",
+          height: "300px",
+        })
         .fromTo(
-          nameRef.current,
+          infoRef.current,
           {
-            y: -280,
-            x: -50,
-            position: "absolute", // this is what making scaling work and holding the text in the same place
-            scale: 9,
+            x: -350,
+            y: 80,
           },
           {
-            duration: 0.5,
-            opacity: 1,
+            x: -50,
+            y: 60,
+            duration: 1,
             ease: "power4.inOut",
-            color: "whitesomke",
-            fontWeight: "bold",
+            scale: 0.9,
+            opacity: 1,
           }
         );
     });
 
-    mm.add("(max-width:1045px) and (min-width:992px)", () => {
+    mm.add("(max-width:1033.77px) and (min-width:992px)", () => {
       // don't forget to add pixel at the end i.e max-width: 11px
       let timeLine = gsap.timeline();
       timeLine
@@ -106,7 +113,7 @@ const HomePage = () => {
             borderRadius: "20px",
           },
           {
-            y: 190,
+            y: 120,
             duration: 1,
             ease: "power4.inOut",
             borderRadius: "100%",
@@ -114,38 +121,46 @@ const HomePage = () => {
             boxShadow: "0 0 5px white, 0 0 10px coral, 0 0 15px white",
           }
         )
+        .to(profileRef.current, {
+          x: 10,
+          ease: "power4.inOut",
+          duration: 1,
+          borderWidth: "2px",
+          borderRadius: "100%",
+          width: "250px",
+          height: "250px",
+        })
         .fromTo(
-          nameRef.current,
+          infoRef.current,
           {
-            y: -300,
-            x: -50,
-            position: "absolute", // this is what making scaling work and holding the text in the same place
-            scale: 7,
-            wordSpacing: 10,
+            x: -350,
+            y: 60,
           },
           {
-            duration: 0.5,
-            opacity: 1,
+            x: -100,
+            y: 60,
+            duration: 1,
             ease: "power4.inOut",
-            color: "whitesomke",
-            fontWeight: "bold",
+            scale: 0.8,
+            opacity: 1,
+            width: "600px",
           }
         );
     });
 
-    mm.add("(max-width:992px) and (min-width:873px)", () => {
+    mm.add("(max-width:991.77px) and (min-width:873px)", () => {
       // don't forget to add pixel at the end i.e max-width: 11px
       let timeLine = gsap.timeline();
       timeLine
         .fromTo(
           profileRef.current,
           {
-            x: 10,
+            x: -20,
             y: 850,
             borderRadius: "20px",
           },
           {
-            y: 160,
+            y: 60,
             duration: 1,
             ease: "power4.inOut",
             borderRadius: "100%",
@@ -153,33 +168,23 @@ const HomePage = () => {
             boxShadow: "0 0 5px white, 0 0 10px coral, 0 0 15px white",
           }
         )
-        .fromTo(
-          nameRef.current,
-          {
-            y: -580,
-            x: 430,
-            position: "absolute", // this is what making scaling work and holding the text in the same place
-            scale: 6,
-          },
-          {
-            duration: 0.5,
-            opacity: 1,
-            ease: "power4.inOut",
-            color: "whitesomke",
-            fontWeight: "bold",
-            wordSpacing: 50,
-          }
-        );
+        .to(infoRef.current, {
+          opacity: 1,
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          alignItems: "center",
+        });
     });
 
-    mm.add("(max-width:872px) and (min-width:421px)", () => {
+    mm.add("(max-width:872px) and (min-width:719px)", () => {
       const timeline = gsap.timeline();
 
       timeline
         .fromTo(
           profileRef.current,
           {
-            x: -5,
+            x: -10,
             y: 850,
             borderRadius: "20px",
             height: "220px",
@@ -195,19 +200,59 @@ const HomePage = () => {
             scale: 1.2,
           }
         )
-        .to(nameRef.current, {
-          opacity: 0,
+        .to(infoRef.current, {
+          opacity: 1,
+          x: -7,
+          y: 60,
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          alignItems: "center",
         });
     });
 
-    mm.add("(max-width:420.77px) and (min-width: 375px)", () => {
+    mm.add("(max-width:718.77px) and (min-width: 640px)", () => {
       const timeline = gsap.timeline();
 
       timeline
         .fromTo(
           profileRef.current,
           {
-            x: 0,
+            x: -20,
+            y: 850,
+            borderRadius: "20px",
+            height: "200px",
+            width: "200px",
+          },
+          {
+            y: 120,
+            duration: 1,
+            ease: "power4.inOut",
+            borderRadius: "100%",
+            border: "2px solid white",
+            boxShadow: "0 0 5px white, 0 0 10px coral, 0 0 15px white",
+            scale: 1.2,
+          }
+        )
+        .to(infoRef.current, {
+          opacity: 1,
+          x: -15,
+          y: 20,
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          alignItems: "center",
+        });
+    });
+
+    mm.add("(max-width:639.77px) and (min-width:506px)", () => {
+      const timeline = gsap.timeline();
+
+      timeline
+        .fromTo(
+          profileRef.current,
+          {
+            x: -10,
             y: 850,
             borderRadius: "20px",
             height: "180px",
@@ -223,36 +268,81 @@ const HomePage = () => {
             scale: 1.2,
           }
         )
-        .to(nameRef.current, {
-          opacity: 0,
+        .to(infoRef.current, {
+          opacity: 1,
+          x: 0,
+          y: 20,
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          alignItems: "center",
         });
     });
 
-    mm.add("(max-width:374.77px)", () => {
+    mm.add("(max-width:505.77px) and (min-width:424px)", () => {
       const timeline = gsap.timeline();
 
       timeline
         .fromTo(
           profileRef.current,
           {
-            x: 0,
+            x: -10,
             y: 850,
             borderRadius: "20px",
-            height: "180px",
-            width: "180px",
+            height: "200px",
+            width: "200px",
           },
           {
-            y: 120,
+            y: 90,
             duration: 1,
             ease: "power4.inOut",
             borderRadius: "100%",
             border: "2px solid white",
             boxShadow: "0 0 5px white, 0 0 10px coral, 0 0 15px white",
-            scale: 1.2,
           }
         )
-        .to(nameRef.current, {
-          opacity: 0,
+        .to(infoRef.current, {
+          opacity: 1,
+          x: 0,
+          y: 0,
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          alignItems: "center",
+        });
+    });
+
+    mm.add("(max-width:423.77px) ", () => {
+      const timeline = gsap.timeline();
+
+      timeline
+        .fromTo(
+          profileRef.current,
+          {
+            x: -4,
+            y: 850,
+            borderRadius: "20px",
+            height: "200px",
+            width: "200px",
+          },
+          {
+            y: 90,
+            duration: 1,
+            ease: "power4.inOut",
+            borderRadius: "100%",
+            border: "2px solid white",
+            boxShadow: "0 0 5px white, 0 0 10px coral, 0 0 15px white",
+          }
+        )
+        .to(infoRef.current, {
+          opacity: 1,
+          x: 0,
+          y: 0,
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          alignItems: "center",
+          scale: 0.92,
         });
     });
   }, []);
@@ -293,10 +383,11 @@ const HomePage = () => {
           fontWeight="bold"
           opacity="0"
           ref={infoRef}
-          display="inline-block"
         >
           <span className="info-text home-5">Hi there, this is</span>
-          <br />{" "}
+          <Show above="lg">
+            <br />{" "}
+          </Show>
           <Text
             as="i"
             className="info-text home-1"
@@ -305,12 +396,16 @@ const HomePage = () => {
           >
             LIKHIT S B
           </Text>
-          <br />
+          <Show above="lg">
+            <br />
+          </Show>
           <span className="info-text home-4">I'm a</span>
           <Text as="i" className="info-text home-2">
             FullStack
           </Text>{" "}
-          <br />
+          <Show above="lg">
+            <br />
+          </Show>
           <Text
             as="em"
             className="info-text home-3"
@@ -320,10 +415,6 @@ const HomePage = () => {
           >
             Web Developer
           </Text>
-        </Box>
-        <Box className="namastae" ref={nameRef} opacity="0">
-          {/*for gsap to work refer elements through div or box, not directly to something like text */}
-          <Text as="i">Namastae</Text>
         </Box>
       </GridItem>
     </SimpleGrid>
