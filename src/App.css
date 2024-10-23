@@ -6,6 +6,7 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   cursor: none;
+  background-color: black;
 }
 
 #profile_img {
