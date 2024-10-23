@@ -21,7 +21,6 @@ const Projects = () => {
           fontFamily="sans-serif"
           data-scroll
           data-scroll-speed="5"
-          // data-scroll-direction="horizontal"
         >
           My projects.
         </Text>

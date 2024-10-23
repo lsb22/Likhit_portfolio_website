@@ -84,37 +84,6 @@ body {
   transform: scale(8);
 }
 
-/* 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  perspective: 1000px;
-  font-size: 5rem;
-}
-
-.whiteCard,
-.blackCard {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border-radius: 10px;
-  transform-style: preserve-3d;
-}
-
-.whiteCard {
-  background-color: white;
-  color: black;
-}
-
-.blackCard {
-  background-color: black;
-  color: white;
-} */
-
 .cardHeading {
   font-size: 50px;
   font-weight: 600;
@@ -776,7 +745,7 @@ body {
 
 @media (max-width: 991.77px) and (min-width: 719px) {
   .home-text {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 200;
     font-style: italic;
   }
@@ -927,8 +896,8 @@ body {
 
 @media (min-width: 1519.88px) and (max-width: 1680px) {
   #profile_img {
-    height: 44%;
-    width: 48%;
+    height: 350px;
+    width: 350px;
   }
 
   .home-1 {
@@ -1008,8 +977,8 @@ body {
 @media (min-width: 1680.77px) and (max-width: 1710px) {
   #profile_img {
     margin-top: 5%;
-    height: 42%;
-    width: 46%;
+    height: 380px;
+    width: 380px;
   }
 
   .home-1 {
@@ -1097,8 +1066,8 @@ body {
 @media (min-width: 1710.77px) and (max-width: 1920px) {
   #profile_img {
     margin-top: 5%;
-    height: 42%;
-    width: 46%;
+    height: 400px;
+    width: 400px;
   }
 
   .home-1 {
@@ -1197,8 +1166,8 @@ body {
 @media (min-width: 1920.77px) and (max-width: 2580px) {
   #profile_img {
     margin-top: 9%;
-    height: 37%;
-    width: 41%;
+    height: 492px;
+    width: 492px;
   }
 
   .home-1 {
@@ -1308,8 +1277,8 @@ body {
 @media (min-width: 2580.77px) and (max-width: 3850px) {
   #profile_img {
     margin-top: 15%;
-    height: 35%;
-    width: 39%;
+    height: 750px;
+    width: 750px;
   }
 
   .home-1 {
@@ -1370,6 +1339,7 @@ body {
   .header,
   .nav-text {
     font-size: 80px;
+    margin: 40px;
   }
 
   .contact-text {
@@ -1416,8 +1386,8 @@ body {
 @media (min-width: 3850.77px) {
   #profile_img {
     margin-top: 20%;
-    height: 40%;
-    width: 42%;
+    height: 1050px;
+    width: 1050px;
   }
 
   .home-1 {
@@ -1478,6 +1448,7 @@ body {
   .header,
   .nav-text {
     font-size: 105px;
+    margin: 50px;
   }
 
   .contact-text {

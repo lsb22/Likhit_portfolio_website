@@ -56,7 +56,6 @@ const Conclude = () => {
         <HStack justifyContent="center" spacing={10}>
           <Tooltip label="Click to copy" hasArrow>
             <Link onClick={handleClick}>
-              {/* <Badge colorScheme="green"> */}
               <Box
                 className="conclude-badge"
                 border="2px solid white"
@@ -71,7 +70,6 @@ const Conclude = () => {
               >
                 Email
               </Box>
-              {/* </Badge> */}
             </Link>
           </Tooltip>
           <Link href="https://www.linkedin.com/in/likhitsb156" isExternal>

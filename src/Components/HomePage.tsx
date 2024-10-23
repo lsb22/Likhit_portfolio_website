@@ -36,6 +36,7 @@ const HomePage = () => {
           duration: 1,
           borderWidth: "2px",
           borderRadius: "100%",
+          boxShadow: "0 0 5px white, 0 0 10px white, 0 0 15px gray",
           scale: 1.3,
         })
         .fromTo(
@@ -56,7 +57,6 @@ const HomePage = () => {
     });
 
     mm.add("(max-width:1121.55px) and (min-width:1034px)", () => {
-      // don't forget to add pixel at the end i.e max-width: 11px
       let timeLine = gsap.timeline();
       timeLine
         .fromTo(
@@ -102,7 +102,6 @@ const HomePage = () => {
     });
 
     mm.add("(max-width:1033.77px) and (min-width:992px)", () => {
-      // don't forget to add pixel at the end i.e max-width: 11px
       let timeLine = gsap.timeline();
       timeLine
         .fromTo(
@@ -149,7 +148,6 @@ const HomePage = () => {
     });
 
     mm.add("(max-width:991.77px) and (min-width:873px)", () => {
-      // don't forget to add pixel at the end i.e max-width: 11px
       let timeLine = gsap.timeline();
       timeLine
         .fromTo(
@@ -406,13 +404,7 @@ const HomePage = () => {
           <Show above="lg">
             <br />
           </Show>
-          <Text
-            as="em"
-            className="info-text home-3"
-            // data-scroll
-            // data-scroll-speed="-10"
-            // data-scroll-direction="horizontal"
-          >
+          <Text as="em" className="info-text home-3">
             Web Developer
           </Text>
         </Box>

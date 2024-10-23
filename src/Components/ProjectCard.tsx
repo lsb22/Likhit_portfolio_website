@@ -25,7 +25,6 @@ const ProjectCard = ({ index, children }: Props) => {
         borderWidth={{ sm: 2, xl: 4 }}
         overflow="hidden"
         direction={index % 2 == 0 ? "row" : "row-reverse"}
-        // mb={{ sm: 10, xl: 30 }}
       >
         <Box>
           <Image className="card-img" src={img} objectFit="cover" mt={-1} />

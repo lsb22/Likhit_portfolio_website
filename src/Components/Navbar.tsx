@@ -23,7 +23,6 @@ const Navbar = () => {
       <Text
         ml={{ lg: 8 }}
         fontWeight="bold"
-        // fontSize={{ lg: 30, sm: 22, xl: 30, "2xl": 38 }}
         className="header"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -33,7 +32,6 @@ const Navbar = () => {
       <Text
         className="nav-text"
         mr={{ lg: 8 }}
-        // fontSize={{ lg: 30, sm: 20, xl: 30, "2xl": 38 }}
         fontFamily="Kaushan Script"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
