@@ -1533,3 +1533,11 @@ body {
     padding-left: 340px;
   }
 }
+
+/* for smaller heights */
+
+@media (max-height: 500px) {
+  .homePage {
+    min-height: 700px;
+  }
+}
