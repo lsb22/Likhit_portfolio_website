@@ -16,6 +16,7 @@ const useLocomotiveScroll = () => {
         el: scrollRef.current,
         smooth: true,
         lerp: 0.08,
+        multiplier: 0.8,
         smartphone: {
           smooth: true,
         },
@@ -49,12 +50,25 @@ const useLocomotiveScroll = () => {
       // ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
       // ScrollTrigger.refresh();
 
-      window.addEventListener("resize", () => {
-        locoScroll.update();
+      const resizeObserver = new ResizeObserver(() => {
+        // Small delay to ensure DOM is updated
+        setTimeout(() => {
+          locoScroll.update();
+        }, 100);
       });
+
+      resizeObserver.observe(scrollRef.current);
+
+      setTimeout(() => {
+        locoScroll.update();
+      }, 500);
+      // window.addEventListener("resize", () => {
+      //   locoScroll.update();
+      // });
 
       return () => {
         locoScroll.destroy();
+        resizeObserver.disconnect();
         // @ts-ignore
         //   ScrollTrigger.removeEventListener("refresh", () => locoScroll.update());
       };

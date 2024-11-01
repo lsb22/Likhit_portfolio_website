@@ -73,6 +73,13 @@ body {
   background-color: black;
 }
 
+@media (max-width: 600px) {
+  .projects {
+    min-height: auto;
+    height: auto;
+  }
+}
+
 .cursor-outline.hovering {
   transform: scale(2);
 }
