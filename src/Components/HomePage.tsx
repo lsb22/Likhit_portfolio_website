@@ -167,12 +167,14 @@ const HomePage = () => {
           }
         )
         .to(infoRef.current, {
+          y: 20,
           opacity: 1,
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
           alignItems: "center",
-          ease: "power4.inOut",
+          ease: "circ.in",
+          duration: 0.9,
         });
     });
 
@@ -207,7 +209,8 @@ const HomePage = () => {
           flexWrap: "wrap",
           justifyContent: "center",
           alignItems: "center",
-          ease: "power4.inOut",
+          ease: "circ.in",
+          duration: 0.9,
         });
     });
 
@@ -242,7 +245,8 @@ const HomePage = () => {
           flexWrap: "wrap",
           justifyContent: "center",
           alignItems: "center",
-          ease: "power4.inOut",
+          ease: "circ.in",
+          duration: 0.9,
         });
     });
 
@@ -277,7 +281,8 @@ const HomePage = () => {
           flexWrap: "wrap",
           justifyContent: "center",
           alignItems: "center",
-          ease: "power4.inOut",
+          ease: "circ.in",
+          duration: 0.9,
         });
     });
 
@@ -311,7 +316,8 @@ const HomePage = () => {
           flexWrap: "wrap",
           justifyContent: "center",
           alignItems: "center",
-          ease: "power4.inOut",
+          ease: "circ.in",
+          duration: 0.9,
         });
     });
 
@@ -346,7 +352,8 @@ const HomePage = () => {
           justifyContent: "center",
           alignItems: "center",
           scale: 0.92,
-          ease: "power4.inOut",
+          ease: "circ.in",
+          duration: 0.9,
         });
     });
   }, []);
