@@ -1,15 +1,15 @@
 import { ReactNode, useEffect, useState } from "react";
-import todo from "../assets/images/todoList.avif";
-import gamehub from "../assets/images/gameHub.png";
+import taskImg from "../assets/images/task_assignment_app2.webp";
+import chattingImg from "../assets/images/anonymous_chatting_app.webp";
+import drawingImg from "../assets/images/drawing_app.webp";
 import { Box, Card, CardBody, Image } from "@chakra-ui/react";
-import studentapp from "../assets/images/studentManagement.png";
 
 interface Props {
   index: number;
   children: ReactNode;
 }
 
-const images = [gamehub, studentapp, todo];
+const images = [drawingImg, chattingImg, taskImg];
 
 const ProjectCard = ({ index, children }: Props) => {
   const img = images[index];

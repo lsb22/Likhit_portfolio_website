@@ -31,13 +31,11 @@ const Projects = () => {
           <ProjectCard index={0}>
             <VStack>
               <Text className="cardHeading">
-                <Link href="https://game-hub-swart-five.vercel.app/" isExternal>
-                  Search your favourite games right away.
-                </Link>
+                Collaborative whiteboard to show your creativity.
               </Text>
               <Text color="gray.300" className="card-desc">
-                A simple and responsive platform to find games according to
-                genre and platform. I bet you'll never get bored.
+                A simple collaborative whiteboard to draw shapes and images with
+                ease.
               </Text>
             </VStack>
           </ProjectCard>
@@ -46,11 +44,13 @@ const Projects = () => {
           <ProjectCard index={1}>
             <VStack>
               <Text className="cardHeading">
-                Student data management made simple.
+                <Link href="https://github.com/lsb22/CampusConnect" isExternal>
+                  Chat anonymously without any concern.
+                </Link>
               </Text>
               <Text color="gray.300" className="card-desc">
-                Create classrooms and group students with several dynamic
-                functionalities along with seperate views for each classrooms.
+                An anonymous chatting app that lets you chat with people without
+                revealing your identity.
               </Text>
             </VStack>
           </ProjectCard>
@@ -59,14 +59,16 @@ const Projects = () => {
           <ProjectCard index={2}>
             <VStack textAlign="left">
               <Text className="cardHeading">
-                <Link href="https://github.com/lsb22/ToDoListApp" isExternal>
-                  Too many tasks?, one todolist is the answer
+                <Link
+                  href="https://github.com/lsb22/cs_tech_project"
+                  isExternal
+                >
+                  Too many tasks? Not a problem anymore
                 </Link>
               </Text>
               <Text color="gray.300" className="card-desc">
-                Modern and user friendly ToDo list for all your day to day task
-                management where you can categorize tasks based on priority and
-                their type.
+                Modern and user friendly automated task assignment app for all
+                your day to day task management.
               </Text>
             </VStack>
           </ProjectCard>
