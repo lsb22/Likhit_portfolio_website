@@ -1,7 +1,7 @@
 import { gsap } from "gsap";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
-import profileImg from "../assets/images/lsb-img-5.png";
+import profileImg from "../assets/images/lsb-img-6.webp";
 import { Box, GridItem, Image, Show, SimpleGrid, Text } from "@chakra-ui/react";
 
 const HomePage = () => {
@@ -9,11 +9,11 @@ const HomePage = () => {
   const infoRef = useRef(null);
 
   useGSAP(() => {
-    let mm = gsap.matchMedia();
+    const mm = gsap.matchMedia();
 
     mm.add("(min-width:1122px)", () => {
       // don't forget to add pixel at the end i.e max-width: 11px
-      let timeLine = gsap.timeline();
+      const timeLine = gsap.timeline();
       timeLine
         .fromTo(
           profileRef.current,
@@ -57,7 +57,7 @@ const HomePage = () => {
     });
 
     mm.add("(max-width:1121.55px) and (min-width:1034px)", () => {
-      let timeLine = gsap.timeline();
+      const timeLine = gsap.timeline();
       timeLine
         .fromTo(
           profileRef.current,
@@ -102,7 +102,7 @@ const HomePage = () => {
     });
 
     mm.add("(max-width:1033.77px) and (min-width:992px)", () => {
-      let timeLine = gsap.timeline();
+      const timeLine = gsap.timeline();
       timeLine
         .fromTo(
           profileRef.current,
@@ -148,7 +148,7 @@ const HomePage = () => {
     });
 
     mm.add("(max-width:991.77px) and (min-width:873px)", () => {
-      let timeLine = gsap.timeline();
+      const timeLine = gsap.timeline();
       timeLine
         .fromTo(
           profileRef.current,

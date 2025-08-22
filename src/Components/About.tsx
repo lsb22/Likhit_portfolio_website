@@ -88,7 +88,7 @@ const About = () => {
             data-scroll-target="#name"
             textAlign="center"
           >
-            3rd Year Engineering Student At JSSATEB
+            4th Year Engineering Student At JSSATEB
           </Box>
         </Box>
 
